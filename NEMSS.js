@@ -316,7 +316,7 @@
     { name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/zVwMpxc6/Chinedu-Udeji.jpg' },
     { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/jvRRZPx4/Chimmeli-okonk' },
     { name: 'Omenwa Chidozie', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg' },
-    { name: 'Iwuanya Emmanuel', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie' },
+    { name: 'Iwuanya Emmanuel', position: 'Patron', image: 'https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg' },
     { name: 'Chiemerie Okoye', position: 'Secretary', image: 'https://i.ibb.co/xbJStTm/Chiemerie-Okoye.jpg' },
     { name: 'Awa Chiamaka Rita', position: 'Secretary', image: 'https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg' },
     { name: 'Onyelonu Goodness', position: 'Financial Secretary', image: 'https://i.ibb.co/rRYLQ2P5/Goodness-Onyelonu.jpg' },
@@ -397,6 +397,7 @@ const imagePositionOverrides = {
     
 
     // Executives (set same editable map so changing here affects both views)
+    'https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg': '6% 6%',
     'https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg': '80% 80%',
     'https://i.ibb.co/jvRRZPx4/Chimmeli-okonk.jpg': '50% 30%',
     'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg': '20% 20%',
