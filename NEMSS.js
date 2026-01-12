@@ -313,52 +313,52 @@
         };
 
         const executivesData = [
-    { name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/zVwMpxc6/Chinedu-Udeji.jpg' },
-    { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/jvRRZPx4/Chimmeli-okonk' },
-    { name: 'Omenwa Chidozie', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg' },
-    { name: 'Iwuanya Emmanuel', position: 'Patron', image: 'https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg' },
-    { name: 'Chiemerie Okoye', position: 'Secretary', image: 'https://i.ibb.co/xbJStTm/Chiemerie-Okoye.jpg' },
-    { name: 'Awa Chiamaka Rita', position: 'Secretary', image: 'https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg' },
-    { name: 'Onyelonu Goodness', position: 'Financial Secretary', image: 'https://i.ibb.co/rRYLQ2P5/Goodness-Onyelonu.jpg' },
-    { name: 'Amara Ejikeme', position: 'Treasurer', image: 'https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg' },
-    { name: 'Emmanuel Silas N', position: 'Public Relations Officer', image: 'https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg' },
-    { name: 'Chisom Onuoha', position: 'Chairman Planning-Committe', image: 'https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg' },
-    { name: 'Caleb Isife', position: 'Vice Planning-Committe', image: 'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg' }
+            {name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg', },// <-- adjustable}
+            { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/jvRRZPx4/Chimmeli-okonk' },
+            { name: 'Omenwa Chidozie', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg' },
+            { name: 'Iwuanya Emmanuel', position: 'Patron', image: 'https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg' },
+            { name: 'Chiemerie Okoye', position: 'Secretary', image: 'https://i.ibb.co/xbJStTm/Chiemerie-Okoye.jpg' },
+            { name: 'Awa Chiamaka Rita', position: 'Secretary', image: 'https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg' },
+            { name: 'Onyelonu Goodness', position: 'Financial Secretary', image: 'https://i.ibb.co/rRYLQ2P5/Goodness-Onyelonu.jpg' },
+            { name: 'Amara Ejikeme', position: 'Treasurer', image: 'https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg' },
+            { name: 'Emmanuel Silas N', position: 'Public Relations Officer', image: 'https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg' },
+            { name: 'Chisom Onuoha', position: 'Chairman Planning-Committe', image: 'https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg' },
+            { name: 'Caleb Isife', position: 'Vice Planning-Committe', image: 'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg' }
         ];
 
-        const galleryData = [
-  { name: "Ijeoma Nwokolo", image: "https://i.ibb.co/N2zdsHhr/Nwokolo-Ijeoma.jpg", thought: "Happiness grows when shared with friends who lift our spirits." },
-  { name: "Amara Egbuonu", image: "https://i.ibb.co/Q3pPZJLw/Amara-Egbuonu.jpg", thought: "Each small act of kindness creates ripples of joy in the world." },
-  { name: "Emmanuel Iwuanya", image: "https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg", thought: "True friendship shines brightest during challenging times." },
-  { name: "Chinaza Njoku Johnson", image: "https://i.ibb.co/XfGbptDg/Chinaza-Njoku-Johnson.jpg", thought: "Sharing laughter and memories strengthens the bonds we hold dear." },
-  { name: "Nzube Obi", image: "https://i.ibb.co/HfZNQkJm/Nzube-Obi.jpg", thought: "Hope is the spark that guides us through every journey." },
-  { name: "Uzochukwu Uchechukwu", image: "https://i.ibb.co/nMKnsFyw/Uzochukwu-Uchechukwu.jpg", thought: "Every kind word has the power to brighten someone’s day." },
-  { name: "Amara Julliet", image: "https://i.ibb.co/jZ1Mgd2r/Amara-Julliet.jpg", thought: "Joy multiplies when shared among those we care about." },
-  { name: "Onyinye Mbonu", image: "https://i.ibb.co/k2F2YX8b/Onyinye-Mbonu.jpg", thought: "Moments of gratitude transform ordinary days into blessings." },
-  { name: "Chimmeli Okonkwo", image: "https://i.ibb.co/jvRRZPx4/Chimmeli-okonkwo.jpg", thought: "Every smile we share leaves a lasting mark on the heart." },
-  { name: "Goodness Oranekwu", image: "https://i.ibb.co/zhfM34vr/Goodness-Oranekwu.jpg", thought: "Patience and kindness guide us toward a brighter future." },
-  { name: "Udochukwu Onwugbenu", image: "https://i.ibb.co/sJy9h3mq/Udochukwu-Onwugbenu.jpg", thought: "Courage grows when we support each other wholeheartedly." },
-  { name: "Oken Jerry", image: "https://i.ibb.co/6ckQbKDP/Oken-Jerry.jpg", thought: "Every day is a new chance to inspire someone with your actions." },
-  { name: "Sopulu Nwawulu", image: "https://i.ibb.co/qL0YPVTQ/Sopulu-Nwawulu.jpg", thought: "Friendship shines brighter than any treasure in the world." },
-  { name: "Chiamaka Tagbo", image: "https://i.ibb.co/Jj8brWd1/Chiamaka-Tagbo.jpg", thought: "Hope blooms when we nurture it with care and love." },
-  { name: "Okemefuna Chioma", image: "https://i.ibb.co/gMtCJKcb/Okemefuna-Chioma.jpg", thought: "Even small acts of kindness can leave a big impact." },
-  { name: "Awa Chiamaka", image: "https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg", thought: "Happiness is found in sharing memorable moments together." },
-  { name: "Okoro Chekwube", image: "https://i.ibb.co/7J5FjtGM/Okoro-Chekwube.jpg", thought: "Positivity and perseverance pave the road to success." },
-  { name: "Azubueze Bright", image: "https://i.ibb.co/KpTqPDfH/Azubueze-Bright.jpg", thought: "Kindness lights up even the darkest corners of life." },
-  { name: "Goodness Onyelonu", image: "https://i.ibb.co/67zpy0hD/Goodness-Onyelonu.jpg", thought: "Every shared laugh adds warmth to our hearts." },
-  { name: "Happiness Udechukwu", image: "https://i.ibb.co/BJRKqVz/Happiness-Udechukwu.jpg", thought: "The joy we create together becomes a treasured memory." },
-  { name: "Eijkeme Amara", image: "https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg", thought: "Gratitude and hope make life’s journey even more beautiful." },
-  { name: "Caleb Isife", image: "https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg", thought: "True strength is revealed when we help others rise." },
-  { name: "Chidi Oforma", image: "https://i.ibb.co/3YcdbM4P/Chidi-Oforma.jpg", thought: "Every kind gesture leaves a lasting impression on someone’s heart." },
-  { name: "Somto Okeke", image: "https://i.ibb.co/9FjLYJg/Somto-Okeke.jpg", thought: "Happiness is amplified when we share it with friends." },
-  { name: "Isreal Chukwumamkpam", image: "https://i.ibb.co/7J77Gvy1/Isreal-Chukwumamkpam.jpg", thought: "Patience and love are keys to a fulfilling life." },
-  { name: "Chiemerie Okoye", image: "https://i.ibb.co/8w6DLZz/Chiemerie-Okoye.jpg", thought: "Hope grows stronger when shared with others around us." },
-  { name: "Aliba Ezenwa", image: "https://i.ibb.co/C55mp397/Aliba-Ezenwa.jpg", thought: "Friendship and laughter are treasures of the soul." },
-  { name: "Emmanuel Silas", image: "https://i.ibb.co/93GgZtry/Emmanuel-Silas.jpg", thought: "Every shared experience adds a beautiful chapter to our lives." },
-  { name: "Enoja Kingsley", image: "https://i.ibb.co/prrLsMvB/Enoja-Kingsley.jpg", thought: "Caring for others is the essence of true happiness." },
-  { name: "Chinedu Udeji", image: "https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg", thought: "Memories become magical when we cherish them together." },
-  { name: "Chisom Onuoha", image: "https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg", thought: "A kind word can brighten someone’s whole day." },
-  { name: "Omenwa Chidozie", image: "https://i.ibb.co/BVXTGGQr/Omenwa-Chidozie.jpg", thought: "Sharing joy and hope makes life truly meaningful." }
+      const galleryData = [
+            { name: "Ijeoma Nwokolo", image: "https://i.ibb.co/N2zdsHhr/Nwokolo-Ijeoma.jpg", thought: "Happiness grows when shared with friends who lift our spirits." },
+            { name: "Amara Egbuonu", image: "https://i.ibb.co/Q3pPZJLw/Amara-Egbuonu.jpg", thought: "Each small act of kindness creates ripples of joy in the world." },
+            { name: "Emmanuel Iwuanya", image: "https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg", thought: "True friendship shines brightest during challenging times." },
+            { name: "Chinaza Njoku Johnson", image: "https://i.ibb.co/XfGbptDg/Chinaza-Njoku-Johnson.jpg", thought: "Sharing laughter and memories strengthens the bonds we hold dear." },
+            { name: "Nzube Obi", image: "https://i.ibb.co/HfZNQkJm/Nzube-Obi.jpg", thought: "Hope is the spark that guides us through every journey." },
+            { name: "Uzochukwu Uchechukwu", image: "https://i.ibb.co/nMKnsFyw/Uzochukwu-Uchechukwu.jpg", thought: "Every kind word has the power to brighten someone’s day." },
+            { name: "Amara Julliet", image: "https://i.ibb.co/jZ1Mgd2r/Amara-Julliet.jpg", thought: "Joy multiplies when shared among those we care about." },
+            { name: "Onyinye Mbonu", image: "https://i.ibb.co/k2F2YX8b/Onyinye-Mbonu.jpg", thought: "Moments of gratitude transform ordinary days into blessings." },
+            { name: "Chimmeli Okonkwo", image: "https://i.ibb.co/jvRRZPx4/Chimmeli-okonkwo.jpg", thought: "Every smile we share leaves a lasting mark on the heart." },
+            { name: "Goodness Oranekwu", image: "https://i.ibb.co/zhfM34vr/Goodness-Oranekwu.jpg", thought: "Patience and kindness guide us toward a brighter future." },
+            { name: "Udochukwu Onwugbenu", image: "https://i.ibb.co/sJy9h3mq/Udochukwu-Onwugbenu.jpg", thought: "Courage grows when we support each other wholeheartedly." },
+            { name: "Oken Jerry", image: "https://i.ibb.co/6ckQbKDP/Oken-Jerry.jpg", thought: "Every day is a new chance to inspire someone with your actions." },
+            { name: "Sopulu Nwawulu", image: "https://i.ibb.co/qL0YPVTQ/Sopulu-Nwawulu.jpg", thought: "Friendship shines brighter than any treasure in the world." },
+            { name: "Chiamaka Tagbo", image: "https://i.ibb.co/Jj8brWd1/Chiamaka-Tagbo.jpg", thought: "Hope blooms when we nurture it with care and love." },
+            { name: "Okemefuna Chioma", image: "https://i.ibb.co/gMtCJKcb/Okemefuna-Chioma.jpg", thought: "Even small acts of kindness can leave a big impact." },
+            { name: "Awa Chiamaka", image: "https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg", thought: "Happiness is found in sharing memorable moments together." },
+            { name: "Okoro Chekwube", image: "https://i.ibb.co/7J5FjtGM/Okoro-Chekwube.jpg", thought: "Positivity and perseverance pave the road to success." },
+            { name: "Azubueze Bright", image: "https://i.ibb.co/KpTqPDfH/Azubueze-Bright.jpg", thought: "Kindness lights up even the darkest corners of life." },
+            { name: "Goodness Onyelonu", image: "https://i.ibb.co/67zpy0hD/Goodness-Onyelonu.jpg", thought: "Every shared laugh adds warmth to our hearts." },
+            { name: "Happiness Udechukwu", image: "https://i.ibb.co/BJRKqVz/Happiness-Udechukwu.jpg", thought: "The joy we create together becomes a treasured memory." },
+            { name: "Eijkeme Amara", image: "https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg", thought: "Gratitude and hope make lifes journey even more beautiful." },
+            { name: "Caleb Isife", image: "https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg", thought: "True strength is revealed when we help others rise." },
+            { name: "Chidi Oforma", image: "https://i.ibb.co/3YcdbM4P/Chidi-Oforma.jpg", thought: "Every kind gesture leaves a lasting impression on someone’s heart." },
+            { name: "Somto Okeke", image: "https://i.ibb.co/9FjLYJg/Somto-Okeke.jpg", thought: "Happiness is amplified when we share it with friends." },
+            { name: "Isreal Chukwumamkpam", image: "https://i.ibb.co/7J77Gvy1/Isreal-Chukwumamkpam.jpg", thought: "Patience and love are keys to a fulfilling life." },
+            { name: "Chiemerie Okoye", image: "https://i.ibb.co/8w6DLZz/Chiemerie-Okoye.jpg", thought: "Hope grows stronger when shared with others around us." },
+            { name: "Aliba Ezenwa", image: "https://i.ibb.co/C55mp397/Aliba-Ezenwa.jpg", thought: "Friendship and laughter are treasures of the soul." },
+            { name: "Emmanuel Silas", image: "https://i.ibb.co/93GgZtry/Emmanuel-Silas.jpg", thought: "Every shared experience adds a beautiful chapter to our lives." },
+            { name: "Enoja Kingsley", image: "https://i.ibb.co/prrLsMvB/Enoja-Kingsley.jpg", thought: "Caring for others is the essence of true happiness." },
+            { name: "Chinedu Udeji", image: "https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg", thought: "Memories become magical when we cherish them together." },
+            { name: "Chisom Onuoha", image: "https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg", thought: "A kind word can brighten someone’s whole day." },
+            { name: "Omenwa Chidozie", image: "https://i.ibb.co/BVXTGGQr/Omenwa-Chidozie.jpg", thought: "Sharing joy and hope makes life truly meaningful." }
 ];
 
            
@@ -389,7 +389,7 @@ const imagePositionOverrides = {
     'https://i.ibb.co/BVXTGGQr/Omenwa-Chidozie.jpg': '20% 20%',
     'https://i.ibb.co/7J5FjtGM/Okoro-Chekwube.jpg': '10% 10%',
     'https://i.ibb.co/6ckQbKDP/Oken-Jerry.jpg': '10% 10%',
-    'https://i.ibb.co/7J5FjtGM/Okoro-Chekwube.jpg': '9% 9%',
+    'https://i.ibb.co/7J5FjtGM/Okoro-Chekwube.jpg': '20% 20%',
     'https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg': '50% 30%',
     'https://i.ibb.co/R4ZyBjFC/Chima-Blessing.jpg': '10% 10%',
     'https://i.ibb.co/twMyw51d/Ofoma-Chisom.jpg': '10% 10%',
@@ -408,6 +408,7 @@ const imagePositionOverrides = {
     'https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg': '15% 15%',
     'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg': '50% 30%'
 };
+
 
 function getImagePosAttr(src) {
     if (!src) return '';
