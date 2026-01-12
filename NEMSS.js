@@ -313,11 +313,17 @@
         };
 
         const executivesData = [
-            { name: "Emmanuel Silas", position: "President", image: "https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg" },
-            { name: "Sarah Johnson", position: "Vice President", image: "https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg" },
-            { name: "David Okonkwo", position: "Secretary", image: "https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg" },
-            { name: "Grace Adeyemi", position: "Treasurer", image: "https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg" },
-            { name: "Michael Chen", position: "Financial Secretary", image: "https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg" }
+    { name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/zVwMpxc6/Chinedu-Udeji.jpg' },
+    { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/jvRRZPx4/Chimmeli-okonk' },
+    { name: 'Omenwa Chidozie', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg' },
+    { name: 'Iwuanya Emmanuel', position: 'Patron', image: 'https://i.ibb.co/MDYPfftG/Omenwa-Chidozie' },
+    { name: 'Chiemerie Okoye', position: 'Secretary', image: 'https://i.ibb.co/xbJStTm/Chiemerie-Okoye.jpg' },
+    { name: 'Awa Chiamaka Rita', position: 'Secretary', image: 'https://i.ibb.co/4g05Mnpb/Awa-Chiamaka.jpg' },
+    { name: 'Onyelonu Goodness', position: 'Financial Secretary', image: 'https://i.ibb.co/rRYLQ2P5/Goodness-Onyelonu.jpg' },
+    { name: 'Amara Ejikeme', position: 'Treasurer', image: 'https://i.ibb.co/ymChxyZm/Eijkeme-Amara.jpg' },
+    { name: 'Emmanuel Silas N', position: 'Public Relations Officer', image: 'https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg' },
+    { name: 'Chisom Onuoha', position: 'Chairman Planning-Committe', image: 'https://i.ibb.co/v4p6nNLx/Chisom-Onuoha.jpg' },
+    { name: 'Caleb Isife', position: 'Vice Planning-Committe', image: 'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg' }
         ];
 
         const galleryData = [
