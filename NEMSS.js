@@ -630,7 +630,7 @@
             { name: "Enoja Kingsley", image: "https://i.ibb.co/prrLsMvB/Enoja-Kingsley.jpg", thought: "Caring for others is the essence of true happiness." },
             { name: "Chinedu Udeji", image: "https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg", thought: "Memories become magical when we cherish them together." },
             { name: "Chisom Onuoha", image: "https://i.ibb.co/XZ323xG5/Chisom-Onuoha.jpg", thought: "A kind word can brighten someone’s whole day." },
-            { name: "Omenwa Chidozie", image: "https://i.ibb.co/BVXTGGQr/Omenwa-Chidozie.jpg", thought: "Sharing joy and hope makes life truly meaningful." }
+            { name: "Omenwa Chidozie", image: "https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg", thought: "Sharing joy and hope makes life truly meaningful." },
 
         ];
 
@@ -713,7 +713,7 @@
 
         // Populate Dues Tables
         function populateDuesTables() {
-            const years = [2023, 2024, 2025, 2026];
+            const years = [2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030];
             
             years.forEach(year => {
                 const tbody = document.getElementById(`dues-table-${year}`);
