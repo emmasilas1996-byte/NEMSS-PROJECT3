@@ -184,7 +184,7 @@
 
         const contributionsData = {
             burial: [
-                { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
+                    { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
                     { member: "ABILITY CHIBUZOR", amount: 1500 },
                     { member: "ALIBE EZENWA", amount: 1500 },
                     { member: "AMARA EJIKEME", amount: 1500 },
@@ -559,6 +559,13 @@
                 { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'EBUKA UNAENGBU', amount: 2000 },
                 ]},
+
+            ],
+            get2gether: [
+                    { name: "CHIMA BLESSING FATHERS BURIAL 2023", date: "June 2023", contributions: [
+                    { member: "ABILITY CHIBUZOR", amount: 1500 },
+                    { member: "AMARA EJIKEME", amount: 1000 },
+                ]},
             ],
         };
 
@@ -760,7 +767,8 @@
                 burial: 'burial-list',
                 wedding: 'wedding-list',
                 childDedication: 'child-dedication-list',
-                support: 'support-list'
+                support: 'support-list',
+                get2gether: 'get2gether-list'
             };
 
             Object.keys(types).forEach(type => {
