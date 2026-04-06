@@ -182,9 +182,10 @@
             ],
         };
 
+        //Contribution entries
         const contributionsData = {
             burial: [
-                    { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
+                { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
                     { member: "ABILITY CHIBUZOR", amount: 1500 },
                     { member: "ALIBE EZENWA", amount: 1500 },
                     { member: "AMARA EJIKEME", amount: 1500 },
@@ -208,7 +209,8 @@
                     { member: "UBAJEKWE IFENNA", amount: 1800 },
                     { member: "UDEJI CHINEDU", amount: 3000 }
                 ]},
-                { name: "EZENWA MOTHERS BURIAL 2023", date: "August 2023", contributions: [
+
+            { name: "EZENWA MOTHERS BURIAL 2023", date: "August 2023", contributions: [
                 { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'AMACHUKWU CHIDINMA', amount: 1500 },
                 { member: 'AMARA GLORIA', amount: 1500 },
@@ -236,8 +238,9 @@
                 { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'UBAJEKWE IFENNA', amount: 3000 },
                 { member: 'UDOCHUKWU ONWUGB', amount: 1500 }
-                ]},
-                { name: "UCHENNA IBEH BURIAL 2024", date: "September 2023", contributions: [
+            ]},
+
+            { name: "UCHENNA IBEH BURIAL 2024", date: "September 2023", contributions: [
                 { member: 'ABILITY CHIBUZOR', amount: 3000 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
@@ -285,8 +288,9 @@
                 { member: 'UDOCHUKWU O', amount: 2000 },
                 { member: 'UZOKWE CHIAMAKA', amount: 1000 },
                 { member: 'VIVIAN UCHE', amount: 1000 },
-                ]},
-                { name: "CHIMEZIE OKEKE FATHERS BURIAL 2024", date: "SEPT 2023", contributions: [
+            ]},
+
+            { name: "CHIMEZIE OKEKE FATHERS BURIAL 2024", date: "SEPT 2023", contributions: [
 		        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'AWA CHIAMAKA', amount: 1500 },
@@ -311,8 +315,9 @@
                 { member: 'UBAJEKWE IFENNA', amount: 1500 },
                 { member: 'UDEJI CHINEDU', amount: 3000 },
                 { member: 'UDOCHUKWU ONWUGBENU', amount: 1500 },
-                ]},
-                { name: "KOSI OBI MOTHERS BURIAL", date: "Dec 2025", contributions: [
+            ]},
+
+            { name: "KOSI OBI MOTHERS BURIAL", date: "Dec 2025", contributions: [
  	   	        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
@@ -348,8 +353,9 @@
                 { member: 'SUZY OMEREBERE', amount: 1500 },
                 { member: 'UBAJEKWE IFENNA', amount: 2000 },
                 { member: 'UDEJI CHINEDU', amount: 5000 },
-                 ]},
-                { name: "CHINAZA KAKA MOTHERS BURIAL 2025", date: "SEPT 2025", contributions: [
+            ]},
+
+            { name: "CHINAZA KAKA MOTHERS BURIAL 2025", date: "SEPT 2025", contributions: [
 		        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
@@ -385,8 +391,9 @@
                 { member: 'SUZY OMEREBERE', amount: 1500 },
                 { member: 'UBAJEKWE IFENNA', amount: 2000 },
                 { member: 'UDEJI CHINEDU', amount: 5000 },
-                ]},
-                { name: "AMARA GLORIA HUSBAND  2025", date: "SEPT 2025", contributions: [
+            ]},
+
+            { name: "AMARA GLORIA HUSBAND  2025", date: "SEPT 2025", contributions: [
                 { member: 'CHIMA BLESSING', amount: 2000 },
                 { member: 'DJ ABILITY', amount: 3000 },
                 { member: 'OKOYE CHIEMERIE', amount: 5000 },
@@ -424,7 +431,50 @@
                 { member: 'SOPULU NWAWULUWULU', amount: 2000 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'CHISOM OFORMA', amount: 2000 },
-             ]},
+            ]},
+            { name: "CALEB MOTHER'S BURIAL 2025", date: "MARCH 2026", contributions: [
+                { member: 'HAPPINESS UDECHUKWU', amount: 3000 },
+                { member: 'CHINAEME FAVOUR', amount: 2000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 2000 },
+                { member: 'EMMANUEL SILAS', amount: 3000 },
+                { member: 'CHIEMERIE OKOYE', amount: 2000 },
+                { member: 'CHIBUZOR ONYEKAONWU', amount: 3000 },
+                { member: 'KINGSLEY ENOJA', amount: 2000 },
+                { member: 'ADORABLE CHUKWUDEBELU', amount: 3000 },
+                { member: 'CHIMA BLESSING', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 5000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 2000 },
+                { member: 'IKENNA EZE', amount: 2500 },
+                { member: 'OMENWA CHIDOZIE', amount: 5000 },
+                { member: 'ALIBA EZENWA', amount: 3000 },
+                { member: 'ADAEZE OKEKE', amount: 3000 },
+                { member: 'CHISOM ONUOHA', amount: 1500 },
+                { member: 'KOSI OBI', amount: 5000 },
+                { member: 'JEREMIAH OKENWA', amount: 2000 },
+                { member: 'CHISOM OFORMA', amount: 2000 },
+                { member: 'OGBONNA FAVOUR', amount: 2000 },
+                { member: 'CHIDI OFORMA', amount: 2000 },
+                { member: 'CHINAZA NJOKU', amount: 2000 },
+                { member: 'SUZY EJIKE', amount: 1500 },
+                { member: 'HENRY ADIBE', amount: 10000 },
+                { member: 'IJEOMA NWOKOLO', amount: 2000 },
+                { member: 'AMARA JULIET', amount: 2000 },
+                { member: 'GOODNESS ONYELEONU', amount: 2000 },
+                { member: 'AMARA GLORIA', amount: 2000 },
+                { member: 'AMARA HOPE', amount: 2000 },
+                { member: 'CHEKWUBE OKORO', amount: 1500 },
+                { member: 'CHIEMERIE ATUCHUKWU', amount: 6000 },
+                { member: 'CHIEMERIE NWOSU', amount: 1500 },
+                { member: 'AMACHUKWU CHIDINMA', amount: 2000 },
+                { member: 'CHIAMAKA AWA', amount: 2000 },
+                { member: 'NNADI CHIDINMA', amount: 2000 },
+                { member: 'IFENNA UBAJEKWE', amount: 5000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 2000 },
+                { member: 'CHINECHEREM OKEZUE', amount: 2000 },
+                { member: 'SOMTO OKEKE', amount: 5000 },
+                { member: 'CHIMEZIE OKEKE', amount: 3000 },
+                { member: 'NZUBE OBI', amount: 5000 },     
+            ]},
 
             ],
             wedding: [
