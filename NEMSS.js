@@ -1,24 +1,24 @@
-// ========================================
+            // ========================================
         // JAVASCRIPT CODE
         // ========================================
         
         // Sample Data
         const membersData = [
-                { name: "Pius", base: "Abia State, NG", occupation: "Buisiness", dob: "13-Feb-1996", phone: "", email: "", image: "https://i.ibb.co/yCP1bCR/Pius.jpg" },
-                { name: "Vivian Uche", base: "Lagos State, NG", occupation: "Entrepreneur", dob: "12-Feb-1996", phone: "", email: "", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg" },
-                { name: "Mmesomea Okoye", base: "Anambra State, NG", occupation: "Merchant", dob: "05 Oct", phone: "07031024974", email: "", image: "https://i.ibb.co/kVY5HC5r/Mmesoma-Okoye.jpg" },
-                { name: "Joshua Mgbemena", base: "Imo State, NG", occupation: "Software Developer", dob: "21-Jun", phone: "", email: "", image: "https://i.ibb.co/9m3vXjBh/Joshua-Mgbemena.jpg" },
-                { name: "Emmanuel Onyedika", base: "Anambra State, NG", occupation: "Business Analyst", dob: "14-Aug", phone: "", email: "", image: "https://i.ibb.co/SX4B9hxw/Emmanuel-Onyedika.jpg" },
-                { name: "Chibueze Okafor", base: "Enugu State, NG", occupation: "Digital Marketer", dob: "09-Mar", phone: "", email: "", image: "https://i.ibb.co/v6z5PyCq/Chibueze-Okafor.jpg" },
-                { name: "Adaeze Okeke", base: "Anambra State, NG", occupation: "Customer Relations Officer", dob: "27-May", phone: "", email: "", image: "https://i.ibb.co/B2WGS2tQ/Adaeze-Okeke.jpg" },
-                { name: "Akubude Albert", base: "Delta State, NG", occupation: "Electrical Technician", dob:"11-Jan" ,phone:"",email:"",image:"https://i.ibb.co/tT6m17hQ/Akubude-Albert.jpg"},
-                { name: "Jecinta Ibemesi", base: "Imo State, NG", occupation: "Administrative Assistant", dob: "06-Jul", phone: "", email: "", image: "https://i.ibb.co/VWKf458x/Jecinta-Ibemesi.jpg" },
-                { name: "Chimezie Okeke", base: "Anambra State, NG", occupation: "Project Coordinator", dob: "19-Sep", phone: "", email: "", image: "https://i.ibb.co/B58pPx6m/Chimezie-Okeke.jpg" },
-                { name: "Favour Ogbonna", base: "Rivers State, NG", occupation: "Content Creator", dob: "12-Feb-1996", phone: "", email: "", image: "https://i.ibb.co/TqRnrtL7/Favour-Ogbonna.jpg" },
-                { name: "Ifeoma Okeke", base: "Ebonyi State, NG", occupation: "Human Resources Officer", dob: "25-Apr", phone: "", email: "", image: "https://i.ibb.co/4ZX42JWP/Ifeoma-Okeke.jpg" },
-                { name: "Dabele Okeke", base: "Anambra State, NG", occupation: "Operations Supervisor", dob: "30-Oct", phone: "", email: "", image: "https://i.ibb.co/0Ryhsy8p/Dabele-Okeke.jpg" },
-                { name: "Uzochukwu Augustine", base: "Abuja, NG", occupation: "ICT Support Officer", dob: "08-Jun", phone: "", email: "", image: "https://i.ibb.co/mr9GWSJb/Uzochukwu-Augustine.jpg" },
-                { name: "Ubaka Okoye", base: "Anambra State, NG", occupation: "Logistics Coordinator", dob: "17-Nov", phone: "", email: "", image: "https://i.ibb.co/ZpD4K8Kz/Ubaka-Okoye.jpg" },
+                {name: "Pius", base: "Abia State, NG", occupation: "Buisiness", dob: "03-Feb", phone: "", email: "", image: "https://i.ibb.co/yCP1bCR/Pius.jpg" },
+                {name: "Vivian Uche", base: "Lagos State, NG", occupation: "Entrepreneur", dob: "15-Mar", phone: "", email: "", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg" },
+                {name: "Mmesomea Okoye", base: "Anambra State, NG", occupation: "Merchant", dob: "05 Oct", phone: "07031024974", email: "", image: "https://i.ibb.co/kVY5HC5r/Mmesoma-Okoye.jpg" },
+                {name: "Joshua Mgbemena", base: "Imo State, NG", occupation: "Software Developer", dob: "21-Jun", phone: "", email: "", image: "https://i.ibb.co/9m3vXjBh/Joshua-Mgbemena.jpg" },
+                {name: "Emmanuel Onyedika", base: "Anambra State, NG", occupation: "Business Analyst", dob: "14-Aug", phone: "", email: "", image: "https://i.ibb.co/SX4B9hxw/Emmanuel-Onyedika.jpg" },
+                {name: "Chibueze Okafor", base: "Enugu State, NG", occupation: "Digital Marketer", dob: "09-Mar", phone: "", email: "", image: "https://i.ibb.co/v6z5PyCq/Chibueze-Okafor.jpg" },
+                {name: "Adaeze Okeke", base: "Anambra State, NG", occupation: "Customer Relations Officer", dob: "27-May", phone: "", email: "", image: "https://i.ibb.co/B2WGS2tQ/Adaeze-Okeke.jpg" },
+                {name: "Akubude Albert", base: "Delta State, NG", occupation: "Electrical Technician", dob:"11-Jan" ,phone:"",email:"",image:"https://i.ibb.co/tT6m17hQ/Akubude-Albert.jpg"},
+                {name: "Jecinta Ibemesi", base: "Imo State, NG", occupation: "Administrative Assistant", dob: "06-Jul", phone: "", email: "", image: "https://i.ibb.co/VWKf458x/Jecinta-Ibemesi.jpg" },
+                {name: "Chimezie Okeke", base: "Anambra State, NG", occupation: "Project Coordinator", dob: "19-Sep", phone: "", email: "", image: "https://i.ibb.co/B58pPx6m/Chimezie-Okeke.jpg" },
+                {name: "Favour Ogbonna", base: "Rivers State, NG", occupation: "Content Creator", dob: "02-Dec", phone: "", email: "", image: "https://i.ibb.co/TqRnrtL7/Favour-Ogbonna.jpg" },
+                {name: "Ifeoma Okeke", base: "Ebonyi State, NG", occupation: "Human Resources Officer", dob: "25-Apr", phone: "", email: "", image: "https://i.ibb.co/4ZX42JWP/Ifeoma-Okeke.jpg" },
+                {name: "Dabele Okeke", base: "Anambra State, NG", occupation: "Operations Supervisor", dob: "30-Oct", phone: "", email: "", image: "https://i.ibb.co/0Ryhsy8p/Dabele-Okeke.jpg" },
+                {name: "Uzochukwu Augustine", base: "Abuja, NG", occupation: "ICT Support Officer", dob: "08-Jun", phone: "", email: "", image: "https://i.ibb.co/mr9GWSJb/Uzochukwu-Augustine.jpg" },
+                {name: "Ubaka Okoye", base: "Anambra State, NG", occupation: "Logistics Coordinator", dob: "17-Nov", phone: "", email: "", image: "https://i.ibb.co/ZpD4K8Kz/Ubaka-Okoye.jpg" },
                 {name: "Henry Adibe", base: "Anambra State. NG", occupation: "Deals on Motor Parts", dob: "24-Dec", phone: "0813496324", email: "", image: "https://i.ibb.co/S7PKS2Tn/Henry-Adibe.jpg"},
                 {name: "Faith Anthony", base: "Lagos State. NG", occupation: "Fashion Designer", dob: "12-May", phone: "", email: "", image: "https://i.ibb.co/BVcN4yQH/Faith-Anthony.jpg"},
                 {name: "Precious Madu", base: "Rivers State. NG", occupation: "Business", dob: "23 Dec", phone: "", email: "", image: "https://i.ibb.co/B5TGdrKc/Precious-Madu.jpg"},
@@ -32,7 +32,7 @@
                 {name: "Emmanuel Iwuanya", base: "Delta State. NG", occupation: "Business", dob: "15-Mar", phone: "", email: "", image: "https://i.ibb.co/hxXmJbCk/Iwuanya-Emmanuel.jpg"},
                 {name: "Amara Juliet", base: "Kaduna State. NG", occupation: "Business", dob: "15-Mar", phone: "", email: "", image: "https://i.ibb.co/jZ1Mgd2r/Amara-Julliet.jpg"},
                 {name: "Nzube Obi" ,base:"Lagos State. NG" ,occupation:"Nigeria Air Force" ,dob:"15-Mar" ,phone:"" ,email:"" ,image:"https://i.ibb.co/HfZNQkJm/Nzube-Obi.jpg"},
-                {name: "Uzochukwu Uchechukwu", base: "Edo State. NG", occupation: "Business", dob: "15-Mar", phone: "", email: "", image:"https://i.ibb.co/nMKnsFyw/Uzochukwu-Uchechukwu.jpg"},
+                {name: "Uzochukwu Uchechkwu", base: "Edo State. NG", occupation: "Business", dob: "15-Mar", phone: "", email: "", image:"https://i.ibb.co/nMKnsFyw/Uzochukwu-Uchechukwu.jpg"},
                 {name: "Onyinye Mbonu (Egemonye)", base:"United Kingdom" ,occupation:"Recruiter Cordinator" ,dob:"15-Mar" ,phone:"" ,email:"" ,image:"https://i.ibb.co/k2F2YX8b/Onyinye-Mbonu.jpg"},
                 {name: "Chimmeli Okonkwo", base: "Anambra State.Ng", occupation: "Enterprenuer", dob: "22-Jun", phone: "", email: "", image: "https://i.ibb.co/jvRRZPx4/Chimmeli-okonkwo.jpg"},
                 {name: "Goodness Oranekwu", base: "Enugu State. NG", occupation: "Secretary & Real Estate", dob: "08-Jan", phone: "", email: "", image: "https://i.ibb.co/zhfM34vr/Goodness-Oranekwu.jpg"},
@@ -66,6 +66,7 @@
 
         ];
 
+//Monthly Duies Segment
         const duesData = {
             2023: [
                 { name: "ABILITY CHIBUZOR", months: [0, 0, 0, 0, 0, 0, 500, 500, 500, 500, 500, 500] },
@@ -117,16 +118,15 @@
                 { name: "KINGSLEY ENOJA", months: [500,500,500,500,500,500,500,500,500,0,0,0] },
                 { name: "NNADI CHIDIMMA", months: [500,500,500,500,500,500,500,500,500,500,500,0] },
                 { name: "OBI KOSI", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "OBI NZUBE", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "OKEKE ADAEZE", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "OKEKE EKPEREKA", months: [0,0,0,0,0,0,0,0,0,0,0,0] },
-                { name: "OKEKE SOMTO", months: [0,0,0,0,0,0,0,0,0,0,0,0] },
-                { name: "OKEMEFUNA CHIOMA P", months: [500,500,500,500,0,0,0,0,0,0,0,0] },
-                { name: "OKEN JEREMAIAH", months: [0,0,0,0,0,0,0,0,0,0,0,0] },
+                { name: "OKEKE EKPEREKA", months: [500,500,500,500,500,500,0,0,0,0,0,0] },
+                { name: "OKEKE SOMTO", months: [500,500,500,500,0,0,0,0,0,0,0,0] },
+                { name: "OKEMEFUNA CHIOMA P", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
+                { name: "OKEN JEREMAIAH", months: [500,500,500,0,0,0,0,0,0,0,0,0] },
                 { name: "OKOYE CHIEMERIE", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "PIUS", months: [500,500,500,500,500,500,0,0,0,0,0,0] },
-                { name: "SILAS EMMANUEL", months: [0,0,0,0,0,0,0,0,0,0,0,0] },
-                { name: "UBAJEKWE IFENNA", months: [500,500,500,500,0,0,0,0,0,0,0,0] },
+                { name: "PIUS", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
+                { name: "SILAS EMMANUEL", months: [500,500,500,500,500,500,0,0,0,0,0,0] },
+                { name: "UBAJEKWE IFENNA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "UDOCHUKWU ONWUGBENU", months: [500,500,500,500,500,500,500,500,500,500,500,500] }
             ],
@@ -167,8 +167,11 @@
             2026: [
                 { name: "CHIDOZIE OMENWA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "CHUKWUEBUKA UNEGBU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] }
+                { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
+                { name: "UDOCHUKWU ONWUGBENU", months: [500,500,500,500,500,0,0,0,0,0,0,0] },
+                { name: "UBAJEKWE IFENNA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
             ],
+
             2027: [
               
             ],
@@ -183,9 +186,10 @@
             ],
         };
 
+ //Contribution entries
         const contributionsData = {
             burial: [
-                    { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
+                { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
                     { member: "ABILITY CHIBUZOR", amount: 1500 },
                     { member: "ALIBE EZENWA", amount: 1500 },
                     { member: "AMARA EJIKEME", amount: 1500 },
@@ -209,7 +213,8 @@
                     { member: "UBAJEKWE IFENNA", amount: 1800 },
                     { member: "UDEJI CHINEDU", amount: 3000 }
                 ]},
-                { name: "EZENWA MOTHERS BURIAL 2023", date: "August 2023", contributions: [
+
+            { name: "EZENWA MOTHERS BURIAL 2023", date: "August 2023", contributions: [
                 { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'AMACHUKWU CHIDINMA', amount: 1500 },
                 { member: 'AMARA GLORIA', amount: 1500 },
@@ -237,8 +242,9 @@
                 { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'UBAJEKWE IFENNA', amount: 3000 },
                 { member: 'UDOCHUKWU ONWUGB', amount: 1500 }
-                ]},
-                { name: "UCHENNA IBEH BURIAL 2024", date: "September 2023", contributions: [
+            ]},
+
+            { name: "UCHENNA IBEH BURIAL 2024", date: "September 2023", contributions: [
                 { member: 'ABILITY CHIBUZOR', amount: 3000 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
@@ -286,8 +292,9 @@
                 { member: 'UDOCHUKWU O', amount: 2000 },
                 { member: 'UZOKWE CHIAMAKA', amount: 1000 },
                 { member: 'VIVIAN UCHE', amount: 1000 },
-                ]},
-                { name: "CHIMEZIE OKEKE FATHERS BURIAL 2024", date: "SEPT 2023", contributions: [
+            ]},
+
+            { name: "CHIMEZIE OKEKE FATHERS BURIAL 2024", date: "SEPT 2023", contributions: [
 		        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'AWA CHIAMAKA', amount: 1500 },
@@ -312,8 +319,9 @@
                 { member: 'UBAJEKWE IFENNA', amount: 1500 },
                 { member: 'UDEJI CHINEDU', amount: 3000 },
                 { member: 'UDOCHUKWU ONWUGBENU', amount: 1500 },
-                ]},
-                { name: "KOSI OBI MOTHERS BURIAL", date: "Dec 2025", contributions: [
+            ]},
+
+            { name: "KOSI OBI MOTHERS BURIAL", date: "Dec 2025", contributions: [
  	   	        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
@@ -349,126 +357,166 @@
                 { member: 'SUZY OMEREBERE', amount: 1500 },
                 { member: 'UBAJEKWE IFENNA', amount: 2000 },
                 { member: 'UDEJI CHINEDU', amount: 5000 },
-                 ]},
-                { name: "CHINAZA KAKA MOTHERS BURIAL 2025", date: "SEPT 2025", contributions: [
-		        { member: 'ABILITY CHIBUZOR', amount: 1500 },
-                { member: 'ADAEZE OKEKE', amount: 2000 },
-                { member: 'ALIBA EZENWA', amount: 1500 },
-                { member: 'AMARA GLORIA', amount: 1500 },
-                { member: 'AMARA JULIET', amount: 1500 },
-                { member: 'AMARA UZOMA', amount: 1500 },
-                { member: 'AWA CHIAMAKA', amount: 1500 },
-                { member: 'CHHIOMA OKEMEFUNA', amount: 1500 },
-                { member: 'CHIAGOZIE AKUBUE', amount: 2000 },
-                { member: 'CHIAMAKA UZOKWE', amount: 1500 },
-                { member: 'CHIDI OFORMA', amount: 1500 },
-                { member: 'CHIMA BLESSSING', amount: 1500 },
-                { member: 'CHIMEZIE OKEKE', amount: 1500 },
-                { member: 'CHISOM OFORMA', amount: 3000 },
-                { member: 'CHISOM ONUORAH', amount: 2000 },
-                { member: 'CHUKWUDEBELU JACINTA', amount: 1500 },
-                { member: 'CHUKWULEZE AMARA HOPE', amount: 2000 },
-                { member: 'EBUKE UNEGBU', amount: 2000 },
-                { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
-                { member: 'HENRY ADIBE', amount: 2000 },
-                { member: 'IJEOMA NWOKOLO', amount: 1500 },
-                { member: 'ISIFE CALEB', amount: 2000 },
-                { member: 'KINGSLEY ENOJA', amount: 1500 },
-                { member: 'MABU NELLY', amount: 30000 },
-                { member: 'NNADI CHIDIMMA', amount: 1500 },
-                { member: 'OKEN JEREMAIAH', amount: 1500 },
-                { member: 'OKORO CHUKWUBE', amount: 1500 },
-                { member: 'OKOYE CHIEMERIE', amount: 1500 },
-                { member: 'OMENWA CHIDOZIE', amount: 2500 },
-                { member: 'ONWUGBENU UDOCHUKWU', amount: 1500 },
-                { member: 'SOMTO OKEKE', amount: 1500 },
-                { member: 'SOPULU NWAWULU', amount: 1500 },
-                { member: 'SUZY OMEREBERE', amount: 1500 },
-                { member: 'UBAJEKWE IFENNA', amount: 2000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
-                ]},
-                { name: "AMARA GLORIA HUSBAND  2025", date: "SEPT 2025", contributions: [
-                { member: 'CHIMA BLESSING', amount: 2000 },
-                { member: 'DJ ABILITY', amount: 3000 },
-                { member: 'OKOYE CHIEMERIE', amount: 5000 },
-                { member: 'CALEB ISISFE', amount: 10000 },
-                { member: 'IKENNA EZE', amount: 2000 },
-                { member: 'ALIBA EZENWA', amount: 4000 },
-                { member: 'HAPPINESS UDECHUKWU', amount: 5000 },
-                { member: 'CHISOM ONUOHA', amount: 5000 },
-                { member: 'CHIOMA OKEMEFUNA', amount: 2000 },
-                { member: 'SOMTO OKEKE', amount: 20000 },
-                { member: 'UBAJEKWE IFENNA', amount: 10000 },
-                { member: 'UDOCHUKWU ONWUGBENU', amount: 2000 },
-                { member: 'KINGSLEY ELOJA', amount: 2000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
-                { member: 'SILAS EMMANUEL', amount: 2000 },
-                { member: 'OKEN JEREMIAH', amount: 2000 },
-                { member: 'OBI NZUBE', amount: 5000 },
-                { member: 'OMENWA CHIDOZIE', amount: 3000 },
-                { member: 'CHIMEZIE OKEKE', amount: 3000 },
-                { member: 'FAVOUR OGBONAA', amount: 2000 },
-                { member: 'AWA CHIAMAKA', amount: 3000 },
-                { member: 'AMAKA OFORMA', amount: 2000 },
-                { member: 'CHIDINMA NNADI', amount: 2000 },
-                { member: 'SUZY OMEREBELE', amount: 2000 },
-                { member: 'JACINTA CHUKWUDEBELU', amount: 3000 },
-                { member: 'IJEOMA NWOKOLO', amount: 2000 },
-                { member: 'CHEKWUBE OKORO', amount: 2000 },
-                { member: 'AMARA CHUKWUKELEZE', amount: 3000 },
-                { member: 'AMARA JULIET', amount: 2000 },
-                { member: 'GOODNESS ONYELONU', amount: 3000 },
-                { member: 'CHINAZA JOHNSON NJOKU', amount: 2000 },
-                { member: 'HENRY ADIBE', amount: 10000 },
-                { member: 'CHIMAMKPAM ISREAL', amount: 2000 },
-                { member: 'CHIDIMMA AMACHUKWU', amount: 3000 },
-                { member: 'SOPULU NWAWULUWULU', amount: 2000 },
-                { member: 'ADAEZE OKEKE', amount: 2000 },
-                { member: 'CHISOM OFORMA', amount: 2000 },
-             ]},
+            ]},
 
-            ],
-            wedding: [
-                { name: "CHIAMAKA UZOKWES WEDDING", date: "June 2024", contributions: [
+            { name: "CHINAZA KAKA MOTHERS BURIAL 2025", date: "SEPT 2025", contributions: [
+                { member: 'ADAEZE OKEKE', amount: 2000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 1500 },
+                { member: 'ALIBA EZENWA', amount: 1500 },
+                { member: 'AMACHUKWU CHIDINMA', amount: 1500 },
+                { member: 'AMAKA OFORMA', amount: 1500 },
+                { member: 'AMARA JULIET', amount: 1500 },
+                { member: 'CHIAMAKA AWA', amount: 1500 },
+                { member: 'CHIMA BLESSING', amount: 1500 },
+                { member: 'CALEB ISIFE', amount: 2000 },
+                { member: 'CHIEMERIE OKOYE', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 3000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 1500 },
+                { member: 'CHISOM ONUOHA', amount: 1500 },
+                { member: 'ABILITY CHIBUZOR', amount: 2000 },
+                { member: 'EBUKA UNEGBU', amount: 2000 },
+                { member: 'GOODNESS ONYELEONU', amount: 1500 },
+                { member: 'GOODNESS ORANEKWU', amount: 1500 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
+                { member: 'HENRY ADIBE', amount: 3000 },
+                { member: 'IJEOMA NWOKOLO', amount: 1500 },
+                { member: 'IKENNA EZE', amount: 1500 },
+                { member: 'KINGSLEY ENOJA', amount: 1500 },
+                { member: 'NZUBE OBI', amount: 1900 },
+                { member: 'KOSI OBI', amount: 2000 },
+                { member: 'NZUBE OKENWA', amount: 1500 },
+                { member: 'CHEKWUBE OKORO', amount: 1500 },
+                { member: 'OMENWA CHIDOZIE', amount: 1500 },
+                { member: 'ONYINYE NNADI', amount: 1500 },
+                { member: 'EMMANUEL SILAS', amount: 1500 },
+                { member: 'SOMTO OKEKE', amount: 2000 },
+                { member: 'SOPULU NWAWULU', amount: 1500 },
+                { member: 'SUZY EJIKE', amount: 1500 },
+                { member: 'IFENNA UBAJEKWE', amount: 2000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 1500 },
+            ]},
+
+            { name: "AMARA GLORIA HUSBAND  2025", date: "SEPT 2025", contributions: [
                 { member: 'CHIMA BLESSING', amount: 2000 },
-                { member: 'DJ ABILITY', amount: 3000 },
-                { member: 'OKOYE CHIEMERIE', amount: 5000 },
-                { member: 'CALEB ISISFE', amount: 10000 },
+                { member: 'ABILITY CHIBUZOR', amount: 3000 },
+                { member: 'CHIEMERIE OKOYE', amount: 5000 },
+                { member: 'CALEB ISIFE', amount: 10000 },
                 { member: 'IKENNA EZE', amount: 2000 },
                 { member: 'ALIBA EZENWA', amount: 4000 },
                 { member: 'HAPPINESS UDECHUKWU', amount: 5000 },
                 { member: 'CHISOM ONUOHA', amount: 5000 },
                 { member: 'CHIOMA OKEMEFUNA', amount: 2000 },
                 { member: 'SOMTO OKEKE', amount: 20000 },
-                { member: 'UBAJEKWE IFENNA', amount: 10000 },
-                { member: 'UDOCHUKWU ONWUGBENU', amount: 2000 },
-                { member: 'KINGSLEY ELOJA', amount: 2000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
-                { member: 'SILAS EMMANUEL', amount: 2000 },
-                { member: 'OKEN JEREMIAH', amount: 2000 },
-                { member: 'OBI NZUBE', amount: 5000 },
+                { member: 'IFENNA UBAJEKWE', amount: 10000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 2000 },
+                { member: 'KINGSLEY ENOJA', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 5000 },
+                { member: 'EMMANUEL SILAS', amount: 2000 },
+                { member: 'JEREMIAH OKENWA', amount: 2000 },
+                { member: 'NZUBE OBI', amount: 5000 },
                 { member: 'OMENWA CHIDOZIE', amount: 3000 },
                 { member: 'CHIMEZIE OKEKE', amount: 3000 },
-                { member: 'FAVOUR OGBONAA', amount: 2000 },
-                { member: 'AWA CHIAMAKA', amount: 3000 },
+                { member: 'OGBONNA FAVOUR', amount: 2000 },
+                { member: 'CHIAMAKA AWA', amount: 3000 },
                 { member: 'AMAKA OFORMA', amount: 2000 },
-                { member: 'CHIDINMA NNADI', amount: 2000 },
-                { member: 'SUZY OMEREBELE', amount: 2000 },
-                { member: 'JACINTA CHUKWUDEBELU', amount: 3000 },
+                { member: 'NNADI CHIDINMA', amount: 2000 },
+                { member: 'SUZY EJIKE', amount: 2000 },
+                { member: 'ADORABLE CHUKWUDEBELU', amount: 3000 },
                 { member: 'IJEOMA NWOKOLO', amount: 2000 },
                 { member: 'CHEKWUBE OKORO', amount: 2000 },
-                { member: 'AMARA CHUKWUKELEZE', amount: 3000 },
+                { member: 'AMARA HOPE', amount: 3000 },
                 { member: 'AMARA JULIET', amount: 2000 },
-                { member: 'GOODNESS ONYELONU', amount: 3000 },
-                { member: 'CHINAZA JOHNSON NJOKU', amount: 2000 },
+                { member: 'GOODNESS ONYELEONU', amount: 3000 },
+                { member: 'CHINAZA NJOKU', amount: 2000 },
                 { member: 'HENRY ADIBE', amount: 10000 },
-                { member: 'CHIMAMKPAM ISREAL', amount: 2000 },
-                { member: 'CHIDIMMA AMACHUKWU', amount: 3000 },
-                { member: 'SOPULU NWAWULUWULU', amount: 2000 },
+                { member: 'ISRAEL CHUKWUKAMMA', amount: 2000 },
+                { member: 'AMACHUKWU CHIDINMA', amount: 3000 },
+                { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'CHISOM OFORMA', amount: 2000 },
             ]},
+
+            { name: "CALEB MOTHER'S BURIAL 2025", date: "MARCH 2026", contributions: [
+                { member: 'HAPPINESS UDECHUKWU', amount: 3000 },
+                { member: 'CHINAEME FAVOUR', amount: 2000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 2000 },
+                { member: 'EMMANUEL SILAS', amount: 3000 },
+                { member: 'CHIEMERIE OKOYE', amount: 2000 },
+                { member: 'CHIBUZOR ONYEKAONWU', amount: 3000 },
+                { member: 'KINGSLEY ENOJA', amount: 2000 },
+                { member: 'ADORABLE CHUKWUDEBELU', amount: 3000 },
+                { member: 'CHIMA BLESSING', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 5000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 2000 },
+                { member: 'IKENNA EZE', amount: 2500 },
+                { member: 'OMENWA CHIDOZIE', amount: 5000 },
+                { member: 'ALIBA EZENWA', amount: 3000 },
+                { member: 'ADAEZE OKEKE', amount: 3000 },
+                { member: 'CHISOM ONUOHA', amount: 1500 },
+                { member: 'KOSI OBI', amount: 5000 },
+                { member: 'JEREMIAH OKENWA', amount: 2000 },
+                { member: 'CHISOM OFORMA', amount: 2000 },
+                { member: 'OGBONNA FAVOUR', amount: 2000 },
+                { member: 'CHIDI OFORMA', amount: 2000 },
+                { member: 'CHINAZA NJOKU', amount: 2000 },
+                { member: 'SUZY EJIKE', amount: 1500 },
+                { member: 'HENRY ADIBE', amount: 10000 },
+                { member: 'IJEOMA NWOKOLO', amount: 2000 },
+                { member: 'AMARA JULIET', amount: 2000 },
+                { member: 'GOODNESS ONYELEONU', amount: 2000 },
+                { member: 'AMARA GLORIA', amount: 2000 },
+                { member: 'AMARA HOPE', amount: 2000 },
+                { member: 'CHEKWUBE OKORO', amount: 1500 },
+                { member: 'CHIEMERIE ATUCHUKWU', amount: 6000 },
+                { member: 'CHIEMERIE NWOSU', amount: 1500 },
+                { member: 'AMACHUKWU CHIDINMA', amount: 2000 },
+                { member: 'CHIAMAKA AWA', amount: 2000 },
+                { member: 'NNADI CHIDINMA', amount: 2000 },
+                { member: 'IFENNA UBAJEKWE', amount: 5000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 2000 },
+                { member: 'CHINECHEREM OKEZUE', amount: 2000 },
+                { member: 'SOMTO OKEKE', amount: 5000 },
+                { member: 'CHIMEZIE OKEKE', amount: 3000 },
+                { member: 'NZUBE OBI', amount: 5000 },     
+            ]},
+
+//wedding List 
+            ],
+            wedding: [
+                { name: "CHIAMAKA UZOKWES WEDDING", date: "June 2024", contributions: [
+                { member: 'ABILITY CHIBUZOR', amount: 1500 },
+                { member: 'ADAEZE OKEKE', amount: 2000 },
+                { member: 'AMARA HOPE', amount: 2000 },
+                { member: 'AMARA JULIET', amount: 1500 },
+                { member: 'CHIMA BLESSING', amount: 1500 },
+                { member: 'CALEB ISIFE', amount: 1500 },
+                { member: 'CHIAMAKA AWA', amount: 1500 },
+                { member: 'CHIDI OFORMA', amount: 1500 },
+                { member: 'CHIDINMA AGWUNCHA', amount: 2000 },
+                { member: 'NNADI CHIDINMA', amount: 1500 },
+                { member: 'OMENWA CHIDOZIE', amount: 3000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 2000 },
+                { member: 'CHIMEZIE OKEKE', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 3000 },
+                { member: 'CHISOM ONUOHA', amount: 2000 },
+                { member: 'EBUKA UNEGBU', amount: 2000 },
+                { member: 'ALIBA EZENWA', amount: 2000 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
+                { member: 'IJEOMA NWOKOLO', amount: 1500 },
+                { member: 'KINGSLEY ENOJA', amount: 1500 },
+                { member: 'KOSI OBI', amount: 2000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 1500 },
+                { member: 'JEREMIAH OKENWA', amount: 2000 },
+                { member: 'CHEKWUBE OKORO', amount: 1500 },
+                { member: 'CHIEMERIE OKOYE', amount: 1500 },
+                { member: 'SOMTO OKEKE', amount: 1500 },
+                { member: 'SOPULU NWAWULU', amount: 1500 },
+                { member: 'SUZY EJIKE', amount: 1500 },
+                { member: 'IFENNA UBAJEKWE', amount: 3000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 1500 },
+            ]},
               
+//Child Dedication List
             ],
             childDedication: [
                 { name: "Chima Blessing Child Dedictaion 2023", date: "June 2022", contributions: [
@@ -497,33 +545,30 @@
                 { member: 'UZOKWE CHIAMAKA', amount: 1000 },
                 ]}
             ],
+
+//Support For the Memebers
             support: [
-                { name: "BUSINESS SUPPORT FOR OMERBERE 2025", date: "June 2025", contributions: [
-                { member: 'ABILITY CHIBUZOR', amount: 1500 },
-                { member: 'AMARA EJIKEME', amount: 1000 },
-                { member: 'CHIAMAKA AWA', amount: 1500 },
-                { member: 'CHIDI OFORMA', amount: 1000 },
-                { member: 'CHISOM ONUORAH', amount: 1000 },
-                { member: 'EKPEREKA OKEKE', amount: 1000 },
-                { member: 'GOODNESS ONYERUONU', amount: 1000 },
-                { member: 'IJEOMA NWOKOLO', amount: 1000 },
-                { member: 'ISIFE CALEB', amount: 5000 },
-                { member: 'IWUANYA EMMANUEL', amount: 1000 },
-                { member: 'KINGSLEY ENOJA', amount: 1000 },
-                { member: 'NNADI CHIDINMMA', amount: 1000 },
-                { member: 'OBI KOSI', amount: 1500 },
-                { member: 'OGBONNA FAVOUR', amount: 1000 },
-                { member: 'OMENWA CHIDOZIE', amount: 2000 },
-                { member: 'ONWUGBENU UDOCHUKWU', amount: 1000 },
-                { member: 'SILAS EMMANUEL', amount: 2000 },
-                { member: 'SOMTO OKEKE', amount: 1000 },
-                { member: 'SOPULU NWAWULU', amount: 1000 },
-                { member: 'UBAJEKWE IFENNA', amount: 2000 },
-                { member: 'UDECHUKWU HAPPINESS', amount: 1000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
-                { member: 'UZOKWE CHIAMAKA', amount: 1000 },
-                ]},
-               { name: "SUPPORT FOR MR OGUNJIOFFOR 2026", date: "June 2025", contributions: [
+            { name: "BUSINESS SUPPORT FOR OMERBERE 2025", date: "June 2025", contributions: [
+                { member: 'CHINEDU UDEJIMBA', amount: 10000 },
+                { member: 'KINGSLEY ENOJA', amount: 10000 },
+                { member: 'IKENNA EZE', amount: 5000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 4000 },
+                { member: 'EMMANUEL SILAS', amount: 5000 },
+                { member: 'ABILITY CHIBUZOR', amount: 5000 },
+                { member: 'KOSI OBI', amount: 5000 },
+                { member: 'OMENWA CHIDOZIE', amount: 10000 },
+                { member: 'DONSOM ONUOHA', amount: 5000 },
+                { member: 'AMARA EJIKEME', amount: 5000 },
+                { member: 'CHIEMERIE OKOYE', amount: 5000 },
+                { member: 'CHIMEZIE OKEKE', amount: 5000 },
+                { member: 'ALIBA EZENWA', amount: 5000 },
+                { member: 'SOMTO OKEKE', amount: 5000 },
+                { member: 'CALEB ISIFE', amount: 5000 },
+                { member: 'ADAEZE OKEKE', amount: 5000 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 5000 },
+            ]},
+
+            { name: "SUPPORT FOR MR OGUNJIOFFOR 2026", date: "June 2025", contributions: [
                 { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
                 { member: 'SOMTO OKEKE', amount: 2000 },
                 { member: 'UDOCHUKWU GODSLOVE', amount: 2500 },
@@ -555,21 +600,95 @@
                 { member: 'CALEB ISIFE', amount: 5000 },
                 { member: 'CHIEMERIE NWOSU', amount: 2000 },
                 { member: 'AMARA CHUKWUKELEZE', amount: 5000 },
-                { member: 'OMENWA CHIDOZIE', amount: 10000 },
+                { member: 'OMENWA CHIDOZIE', amount: 18000 },
                 { member: 'KINGSLEY ENOJA', amount: 2000 },
                 { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'EBUKA UNAENGBU', amount: 2000 },
-                ]},
+				{ member: 'CHISOM ONUOHA', amount: 2000 },
+				{ member: 'IFEOMA OKEKE', amount: 3000 },
+				{ member: 'CHIMEZIE  OKEKE', amount: 2000 },
+				{ member: 'AMAKA OFORMA', amount: 3000 },
+				{ member: 'CHIDINMMA OGECHUKWU', amount: 2000 },
+				{ member: 'NZUBE OBI', amount: 10000 },
+            ]},
 
+//Get Together List
             ],
             get2gether: [
-                    { name: "CHIMA BLESSING FATHERS BURIAL 2023", date: "June 2023", contributions: [
-                    { member: "ABILITY CHIBUZOR", amount: 1500 },
-                    { member: "AMARA EJIKEME", amount: 1000 },
-                ]},
-            ],
+            { name: "GET2GETHER PARTY 2025", date: "JAN 2025", contributions: [
+                { member: 'ABILITY CHIBUZOR', amount: 45000 },
+                { member: 'AMAKA OFORMA', amount: 15000 },
+                { member: 'AMARA JULIET', amount: 5000 },
+                { member: 'CHIEMERIE ATUCHUKWU', amount: 16000 },
+                { member: 'CALEB ISIFE', amount: 70000 },
+                { member: 'CHIAMAKA AWA', amount: 15000 },
+                { member: 'CHIEMERIE OKOYE', amount: 25000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 15000 },
+                { member: 'CHIMA BLESSING', amount: 15000 },
+                { member: 'CHIMEZIE OKEKE', amount: 10000 },
+                { member: 'CHISOM ONUOHA', amount: 15000 },
+                { member: 'AMARA HOPE', amount: 15000 },
+                { member: 'ISRAEL CHUKWUKAMMA', amount: 5000 },
+                { member: 'SUZY EJIKE', amount: 10000 },
+                { member: 'GOODNESS ORANEKWU', amount: 15000 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 65000 },
+                { member: 'HENRY ADIBE', amount: 50000 },
+                { member: 'IJEOMA NWOKOLO', amount: 15000 },
+                { member: 'IFENNA UBAJEKWE', amount: 50000 },
+                { member: 'KINGSLEY ENOJA', amount: 15000 },
+                { member: 'KOSI OBI', amount: 15000 },
+                { member: 'MAKUO OJUKWU', amount: 30000 },
+                { member: 'CHINAZA NJOKU', amount: 15000 },
+                { member: 'NZUBE OBI', amount: 50000 },
+                { member: 'OFORMA CHIDIEBERE', amount: 15000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 15000 },
+                { member: 'JEREMIAH OKENWA', amount: 15000 },
+                { member: 'CHINECHEREM OKEZUE', amount: 5000 },
+                { member: 'OMENWA CHIDOZIE', amount: 185000 },
+                { member: 'ONYINYE MBONU', amount: 50000 },
+                { member: 'EMMANUEL SILAS', amount: 15000 },
+                { member: 'SOMTO OKEKE', amount: 100000 },
+                { member: 'SOPULU NWAWULU', amount: 15000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 90000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 15000 },
+                { member: 'CHIAMAKA UZOCHUKWU', amount: 15000 },
+            ]},
+
+            { name: "MAGAZINE LAUNCHING", date: "JAN 2025", contributions: [
+                { member: 'HAPPINESS OMASIRICHIM', amount: 10000 },
+                { member: 'EBUKA', amount: 10000 },
+                { member: 'CHAIRMAN PAID', amount: 30000 },
+                { member: 'SOPULU NWAWULU', amount: 5000 },
+                { member: 'OFORMA CHIDIEBERE PAID', amount: 2000 },
+                { member: 'AKUBUDE', amount: 10000 },
+                { member: 'AMAKA OFORMA', amount: 3000 },
+                { member: 'KINGSLEY ENOJA', amount: 10000 },
+                { member: 'CHINAZA NJOKU PAID', amount: 10000 },
+                { member: 'OMEREBERE EJIKE', amount: 5000 },
+                { member: 'FLOWER PAID', amount: 5000 },
+                { member: 'GOODNESS ORANEKWU PAID', amount: 1000 },
+                { member: 'ISRAEL CHUKWUKAMMA PAID', amount: 5000 },
+                { member: 'DONSOM', amount: 20000 },
+                { member: 'CALEB', amount: 20000 },
+                { member: 'VICE CHAIRMAN', amount: 5000 },
+                { member: 'KOSI OBI PAID', amount: 5000 },
+            ]},
+            
+            { name: "CAKE LAUNCHING", date: "JAN 2025", contributions: [
+                { member: 'CHIAMAKA UZOCHUKWU', amount: 5000 },
+                { member: 'CHAIRMAN PAID', amount: 20000 },
+                { member: 'CALEB', amount: 10000 },
+                { member: 'AKUBUDE', amount: 10000 },
+                { member: 'EBUKA', amount: 5000 },
+                { member: 'KINGSLEY ENOJA', amount: 5000 },
+                { member: 'DONSOM', amount: 20000 },
+                { member: 'KOSI OBI PAID', amount: 5000 },
+            ]},
+        ],
+
         };
 
+//Executies image Page
         const executivesData = [
             { name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg', },
             { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/LzmXrVTg/Ability-Chibuzor.jpg' },
@@ -582,9 +701,9 @@
             { name: 'Emmanuel Silas N', position: 'Public Relations Officer', image: 'https://i.ibb.co/XkVLY8CF/Emmanuel-Silas.jpg' },
             { name: 'Chisom Onuoha', position: 'Chairman Planning-Committe', image: 'https://i.ibb.co/XZ323xG5/Chisom-Onuoha.jpg' },
             { name: 'Caleb Isife', position: 'Vice Planning-Committe', image: 'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg' }
-
         ];
 
+//Memebers image Page
         const galleryData = [
             { name: "Pius", image: "https://i.ibb.co/KpWckHrC/Pius.jpg", thought: "Consistency quietly builds the future you desire." },
             { name: "Vivian Uche", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg", thought: "The success of tomorrow." },
@@ -642,414 +761,6 @@
             { name: "Omenwa Chidozie", image: "https://i.ibb.co/MDYPfftG/Omenwa-Chidozie.jpg", thought: "Sharing joy and hope makes life truly meaningful." },
 
         ];
-
-        // ========================================
-        // BIRTHDAY WISH SYSTEM
-        // ========================================
-
-        const birthdayDesigns = [
-            {
-                gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                emoji: '🎂',
-                bgPattern: 'confetti'
-            },
-            {
-                gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                emoji: '🎉',
-                bgPattern: 'balloons'
-            },
-            {
-                gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-                emoji: '🎈',
-                bgPattern: 'stars'
-            },
-            {
-                gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-                emoji: '🎊',
-                bgPattern: 'hearts'
-            },
-            {
-                gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-                emoji: '🎁',
-                bgPattern: 'sparkles'
-            }
-        ];
-
-        function getBirthdayDesign(index) {
-            return birthdayDesigns[index % birthdayDesigns.length];
-        }
-
-        function formatDOB(dobString) {
-            const parts = dobString.replace(/-/g, ' ').split(' ');
-            const day = parts[0];
-            const month = parts[1];
-            return { day: day.padStart(2, '0'), month: month.toLowerCase() };
-        }
-
-        function getTodayDateString() {
-            const today = new Date();
-            const day = String(today.getDate()).padStart(2, '0');
-            const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-            const month = months[today.getMonth()];
-            return { day, month };
-        }
-
-        function checkBirthdaysToday() {
-            const today = getTodayDateString();
-            const birthdaysToday = [];
-
-            membersData.forEach((member, index) => {
-                const dob = formatDOB(member.dob);
-                if (dob.day === today.day && dob.month === today.month) {
-                    birthdaysToday.push({ member, index });
-                }
-            });
-
-            return birthdaysToday;
-        }
-
-        function getMemberImage(member) {
-            const galleryMember = galleryData.find(g => g.name.toUpperCase() === member.name.toUpperCase());
-            return galleryMember ? galleryMember.image : member.image;
-        }
-
-        function generateBirthdayMessage(member, index) {
-            const design = getBirthdayDesign(index);
-
-            const messageHTML = `
-╔════════════════════════════════════════╗
-║                                        ║
-║     ${design.emoji}  HAPPY BIRTHDAY  ${design.emoji}      ║
-║                                        ║
-╚════════════════════════════════════════╝
-
-🎉 *${member.name.toUpperCase()}* 🎉
-
-Another year older, another year wiser!
-We celebrate you today and every day.
-
-*Base:* ${member.base}
-*Occupation:* ${member.occupation}
-
-May your day be filled with joy, laughter, 
-and wonderful moments with loved ones.
-
-*From the NEMSS 2014 SET Family* 💚🤍
-
-╔════════════════════════════════════════╗
-║   Let's make this day extra special!   ║
-║      Join us in celebrating our        ║
-║        beloved friend & brother/       ║
-║            sister today!               ║
-╚════════════════════════════════════════╝
-    `;
-
-            return {
-                message: messageHTML,
-                image: getMemberImage(member),
-                member: member.name,
-                design: design
-            };
-        }
-
-        function createBirthdayCard(member, index) {
-            const design = getBirthdayDesign(index);
-            const memberImage = getMemberImage(member);
-
-            const card = document.createElement('div');
-            card.style.cssText = `
-                background: ${design.gradient};
-                border-radius: 20px;
-                padding: 30px;
-                color: white;
-                text-align: center;
-                box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-                max-width: 400px;
-                margin: 20px auto;
-                font-family: 'Poppins', sans-serif;
-                position: relative;
-                overflow: hidden;
-            `;
-
-            card.innerHTML = `
-                <div style="position: relative; z-index: 2;">
-                    <div style="font-size: 60px; margin-bottom: 15px;">${design.emoji}</div>
-                    <h2 style="font-size: 28px; margin: 10px 0; font-weight: 700;">HAPPY BIRTHDAY!</h2>
-                    <img src="${memberImage}" alt="${member.name}" style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin: 15px 0; object-fit: cover;">
-                    <h3 style="font-size: 22px; margin: 15px 0; font-weight: 600;">${member.name}</h3>
-                    <p style="font-size: 14px; margin: 10px 0; opacity: 0.95;">${member.base}</p>
-                    <p style="font-size: 13px; margin: 10px 0; font-style: italic; opacity: 0.9;">"${member.occupation}"</p>
-                    <div style="margin-top: 20px; padding-top: 15px; border-top: 2px solid rgba(255,255,255,0.3); font-size: 12px;">
-                        <p style="margin: 5px 0;">Wishing you a day filled with joy, laughter,</p>
-                        <p style="margin: 5px 0;">and wonderful moments with loved ones!</p>
-                        <p style="margin: 10px 0; font-weight: 600;">From NEMSS 2014 SET Family 💚</p>
-                    </div>
-                    <button onclick="shareToGroupDirect('${member.name}', ${index})" style="margin-top: 15px; padding: 10px 20px; background: rgba(255,255,255,0.3); border: 2px solid white; color: white; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px;">
-                        📱 Share to Group
-                    </button>
-                </div>
-            `;
-
-            return card;
-        }
-
-        function shareToGroupDirect(memberName, index) {
-            const member = membersData.find(m => m.name === memberName);
-            if (!member) return;
-
-            const message = generateBirthdayMessage(member, index);
-            const memberImage = getMemberImage(member);
-            
-            // Your WhatsApp group link
-            const groupLink = "https://chat.whatsapp.com/GQlvbLYtv9d3FATiMLAFD6";
-            
-            // Create FormData to send message with image
-            const formData = new FormData();
-            
-            // Fetch the image and convert to blob
-            fetch(memberImage)
-                .then(response => response.blob())
-                .then(blob => {
-                    formData.append('media', blob, `${memberName}-birthday.jpg`);
-                    
-                    // Create encoded message with image reference
-                    const fullMessage = `${message.message}\n\n📸 Photo attached`;
-                    const encodedMessage = encodeURIComponent(fullMessage);
-                    
-                    // Option 1: Direct WhatsApp API (if available)
-                    const whatsappLink = `https://chat.whatsapp.com/GQlvbLYtv9d3FATiMLAFD6`;
-                    
-                    // Open in new window
-                    const whatsappWindow = window.open(whatsappLink, 'whatsapp', 'width=800,height=600');
-                    
-                    // Show success modal
-                    showBirthdaySuccessModal(member, memberImage, message.message);
-                })
-                .catch(err => {
-                    console.error('Error:', err);
-                    // Fallback: Show modal with manual instructions
-                    showBirthdayShareModal(member, memberImage, message.message);
-                });
-        }
-
-        function showBirthdaySuccessModal(member, imageUrl, message) {
-            // Create modal for sharing
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0,0,0,0.7);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-            `;
-
-            modal.innerHTML = `
-                <div style="background: white; border-radius: 20px; padding: 30px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; text-align: center;">
-                    <div style="font-size: 60px; margin-bottom: 20px;">✅</div>
-                    <h2 style="margin: 0 0 20px 0; color: #333;">Birthday Message Ready!</h2>
-                    <img src="${imageUrl}" alt="${member.name}" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #25D366; margin-bottom: 15px;">
-                    <p style="color: #666; font-size: 14px; margin: 10px 0; font-weight: 600;">
-                        ${member.name}
-                    </p>
-                    <div style="background: #E7F5FE; border-left: 4px solid #25D366; padding: 15px; border-radius: 8px; margin: 20px 0;">
-                        <p style="margin: 0; font-size: 13px; color: #333;">
-                            <strong>🎉 Message prepared!</strong><br>
-                            A WhatsApp window has opened. Paste the message and send it to the group or use the direct share button.
-                        </p>
-                    </div>
-                    <div style="display: flex; gap: 10px; margin: 20px 0;">
-                        <button onclick="this.parentElement.parentElement.parentElement.remove()" style="flex: 1; padding: 12px; background: #25D366; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
-                            ✓ Done
-                        </button>
-                        <button onclick="openGroupDirect('https://chat.whatsapp.com/GQlvbLYtv9d3FATiMLAFD6')" style="flex: 1; padding: 12px; background: #0084FF; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
-                            💬 Open Group
-                        </button>
-                    </div>
-                </div>
-            `;
-
-            document.body.appendChild(modal);
-
-            // Close on background click
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-        }
-
-        function openGroupDirect(groupLink) {
-            window.open(groupLink, '_blank');
-        }
-
-        function showBirthdayShareModal(member, imageUrl, message) {
-            // Create modal for sharing
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0,0,0,0.7);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-            `;
-
-            modal.innerHTML = `
-                <div style="background: white; border-radius: 20px; padding: 30px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; text-align: center;">
-                    <div style="text-align: center; margin-bottom: 20px;">
-                        <h2 style="margin: 0 0 20px 0; color: #333;">📸 Birthday Message Ready!</h2>
-                        <img src="${imageUrl}" alt="${member.name}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #25D366; margin-bottom: 15px;">
-                        <p style="color: #666; font-size: 14px; margin: 10px 0;">
-                            <strong>${member.name}</strong> - ${member.base}
-                        </p>
-                    </div>
-
-                    <div style="background: #f0f0f0; padding: 15px; border-radius: 10px; margin-bottom: 20px; max-height: 200px; overflow-y: auto;">
-                        <p style="white-space: pre-wrap; font-size: 12px; color: #333; margin: 0;">${message}</p>
-                    </div>
-
-                    <div style="background: #FFF3CD; border-left: 4px solid #FFC107; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                        <p style="margin: 0; font-size: 13px; color: #333;">
-                            <strong>📝 Quick Steps:</strong><br>
-                            1. Click "Copy Message"<br>
-                            2. Click "Open Group"<br>
-                            3. Paste & Send! 🎉
-                        </p>
-                    </div>
-
-                    <div style="display: flex; gap: 10px; flex-direction: column;">
-                        <button onclick="copyAndOpenGroup('${message.replace(/'/g, "\\'")}')" style="width: 100%; padding: 12px; background: #25D366; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 15px;">
-                            📋 Copy & Open Group
-                        </button>
-                        <button onclick="this.parentElement.parentElement.parentElement.remove()" style="width: 100%; padding: 12px; background: #e0e0e0; color: #333; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
-                            ✓ Close
-                        </button>
-                    </div>
-                </div>
-            `;
-
-            document.body.appendChild(modal);
-
-            // Close on background click
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-        }
-
-        function copyAndOpenGroup(message) {
-            // Copy message
-            navigator.clipboard.writeText(message).then(() => {
-                // Open group
-                window.open('https://chat.whatsapp.com/GQlvbLYtv9d3FATiMLAFD6', '_blank');
-                
-                // Show success
-                setTimeout(() => {
-                    alert('✅ Message copied!\n\nPaste it in the group now! 🎉');
-                }, 500);
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-                alert('Please try again');
-            });
-        }
-
-        // END BIRTHDAY SYSTEM
-        
-         function displayBirthdayNotification() {
-            const birthdaysToday = checkBirthdaysToday();
-
-            if (birthdaysToday.length > 0) {
-                console.log(`🎉 ${birthdaysToday.length} birthday(s) today!`);
-                
-                birthdaysToday.forEach(({ member, index }) => {
-                    const message = generateBirthdayMessage(member, index);
-                    console.log('Birthday Message:', message.message);
-                    
-                    localStorage.setItem(`birthday-${member.name}`, JSON.stringify(message));
-                });
-
-                if (document.getElementById('birthday-notification')) {
-                    const notifContainer = document.getElementById('birthday-notification');
-                    notifContainer.innerHTML = '<button onclick="closeBirthdayNotification()" style="position: absolute; top: 10px; right: 10px; background: #ff4444; color: white; border: none; border-radius: 50%; width: 35px; height: 35px; font-size: 24px; cursor: pointer; z-index: 1000;">×</button>';
-
-                    birthdaysToday.forEach(({ member, index }) => {
-                        const card = createBirthdayCard(member, index);
-                        notifContainer.appendChild(card);
-                    });
-
-                    notifContainer.style.display = 'block';
-                }
-            }
-        }
-
-        function closeBirthdayNotification() {
-            const notif = document.getElementById('birthday-notification');
-            if (notif) {
-                notif.style.display = 'none';
-            }
-        }
-
-        function createBirthdaySection() {
-            const mainContent = document.querySelector('.main-content');
-            if (mainContent && !document.getElementById('birthday-notification')) {
-                const birthdayDiv = document.createElement('div');
-                birthdayDiv.id = 'birthday-notification';
-                birthdayDiv.style.cssText = `
-                    position: fixed;
-                    top: 80px;
-                    right: 20px;
-                    max-width: 450px;
-                    max-height: 600px;
-                    overflow-y: auto;
-                    background: var(--bg-secondary);
-                    border-radius: 20px;
-                    padding: 20px;
-                    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-                    z-index: 999;
-                    display: none;
-                `;
-                
-                document.body.appendChild(birthdayDiv);
-            }
-        }
-
-        function addBirthdayButton() {
-            const navMenu = document.querySelector('.nav-menu');
-            if (navMenu && !document.getElementById('birthday-nav-btn')) {
-                const birthdayBtn = document.createElement('button');
-                birthdayBtn.id = 'birthday-nav-btn';
-                birthdayBtn.className = 'nav-btn';
-                birthdayBtn.innerHTML = `<span style="font-size: 20px; margin-right: 10px;">🎂</span> <span style="font-weight: 600;">Today's Birthdays</span>`;
-                birthdayBtn.style.cssText = `
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    width: 100%;
-                `;
-                birthdayBtn.onclick = () => {
-                    displayBirthdayNotification();
-                    const notif = document.getElementById('birthday-notification');
-                    if (notif.style.display === 'none') {
-                        notif.style.display = 'block';
-                    } else {
-                        notif.style.display = 'none';
-                    }
-                };
-                navMenu.appendChild(birthdayBtn);
-            }
-        }
-
-         // END BIRTHDAY SYSTEM
 
         // Navigation History
         let navigationHistory = ['dashboard'];
@@ -1398,21 +1109,7 @@ and wonderful moments with loved ones.
             populateContributions();
             populateExecutives();
             populateGallery();
-            addBirthdayButton();
-            createBirthdaySection();
-            displayBirthdayNotification();
-
-            // Check every 24 hours
-            setInterval(() => {
-                displayBirthdayNotification();
-            }, 24 * 60 * 60 * 1000);
-
-            // Check when page comes into focus
-            window.addEventListener('focus', () => {
-                displayBirthdayNotification();
-            });
         });
-
-        document.addEventListener("DOMContentLoaded", () => {
-          console.log("NEMSS app loaded");
-        });
+ document.addEventListener("DOMContentLoaded", () => {
+  console.log("NEMSS app loaded");
+});

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const schedule = require('node-schedule');
 const nodemailer = require('nodemailer');
 const Jimp = require('jimp');
 
@@ -60,7 +61,7 @@ async function buildBirthdayCard(member, designIndex = 0) {
 
   const dobText = member.dob ? `Birthday: ${member.dob}` : 'Birthday: Today';
   image.print(fontSmall, 280, 360, dobText);
-  image.print(fontSmall, 280, 400, `From: NEMSS Family`);
+  image.print(fontSmall, 280, 400, `From: NEMSS Family 💚`);
 
   const outFile = path.join(OUT_DIR, `${member.name.replace(/\s+/g, '_')}_birthday.png`);
   await image.writeAsync(outFile);
@@ -85,23 +86,65 @@ function createTransporter() {
   });
 }
 
+function getRandomMessage() {
+  const greetings = [
+    '🎉 Happy Birthday {name}! 🎉',
+    '🎂 Wishing you a fantastic birthday, {name}! 🎂',
+    '🥳 Happy Birthday to an amazing person, {name}! 🥳',
+    '🎈 Cheers to another year of awesomeness, {name}! 🎈',
+    '🌟 Happy Birthday, {name}! May your day be filled with joy! 🌟'
+  ];
+
+  const wishes = [
+    'We hope your special day is filled with joy, celebration, and wonderful memories with those you love.',
+    'May your birthday be as amazing as you are! Wishing you happiness, success, and all the best.',
+    'Celebrating you today and every day! May this year bring you endless joy and new adventures.',
+    'Another year wiser, another year better! Wishing you a birthday filled with love and laughter.',
+    'May your birthday be the start of a year full of good luck, good health, and much happiness.'
+  ];
+
+  const closings = [
+    'From the entire NEMSS 2014 Family 💚',
+    'With love from all your NEMSS family members 💚',
+    'Warm wishes from the NEMSS 2014 community 💚',
+    'Celebrating with you from the NEMSS family 💚',
+    'Sending birthday hugs from all of us at NEMSS 💚'
+  ];
+
+  const greeting = greetings[Math.floor(Math.random() * greetings.length)].replace('{name}', '{name}');
+  const wish = wishes[Math.floor(Math.random() * wishes.length)];
+  const closing = closings[Math.floor(Math.random() * closings.length)];
+
+  return { greeting, wish, closing };
+}
+
 async function sendBirthdayEmail(member, attachmentPath) {
   const transporter = createTransporter();
   const sender = process.env.SENDER_EMAIL || process.env.SMTP_USER;
   const senderName = process.env.SENDER_NAME || 'NEMSS Family';
 
+  const message = getRandomMessage();
+
   const mailOptions = {
     from: `${senderName} <${sender}>`,
     to: member.email,
     subject: `Happy Birthday ${member.name}! 🎉`,
-    html: `<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-             <h1 style="color: #333; text-align: center;">🎉 Happy Birthday ${member.name}! 🎉</h1>
-             <p style="font-size: 16px; color: #555;">Dear ${member.name},</p>
-             <p style="font-size: 16px; color: #555;">We hope you have an amazing birthday filled with joy, celebration, and wonderful memories!</p>
-             <div style="text-align: center; margin: 30px 0;">
-               <img src="cid:birthdaycard@nemss" alt="Birthday Card" style="max-width: 100%; height: auto; border-radius: 10px;" />
+    html: `<div style="font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+             <h1 style="color: #333; text-align: center; margin: 0 0 10px 0;">${message.greeting.replace('{name}', member.name)}</h1>
+             <p style="font-size: 14px; color: #777; text-align: center; margin: 0 0 20px 0;">Wishing you joy, success, and wonderful memories</p>
+             
+             <div style="text-align: center; margin: 20px 0;">
+               ${member.image ? `<img src="${member.image}" alt="${member.name}" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #5A31F4; object-fit: cover;" />` : ''}
              </div>
-             <p style="font-size: 16px; color: #555;">From the entire NEMSS 2014 Family 💚</p>
+             
+             <p style="font-size: 16px; color: #555; text-align: center;">Dear ${member.name},</p>
+             <p style="font-size: 16px; color: #555; line-height: 1.6;">${message.wish}</p>
+             
+             <div style="text-align: center; margin: 30px 0;">
+               <img src="cid:birthdaycard@nemss" alt="Birthday Card" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+             </div>
+             
+             <p style="font-size: 16px; color: #555; text-align: center; font-weight: bold;">${message.closing}</p>
              <hr style="border: none; border-top: 2px solid #ccc; margin: 20px 0;" />
              <p style="font-size: 12px; color: #999; text-align: center;">This is an automated birthday message. Please don't reply to this email.</p>
            </div>`,
@@ -115,14 +158,16 @@ async function sendBirthdayEmail(member, attachmentPath) {
   };
 
   await transporter.sendMail(mailOptions);
-  console.log(`✅ Sent email to ${member.name} <${member.email}>`);
+  console.log(`✅ [${new Date().toLocaleString()}] Sent email to ${member.name} <${member.email}>`);
 }
 
-(async () => {
+async function checkAndSendBirthdays() {
   try {
+    console.log(`\n🔍 [${new Date().toLocaleString()}] Checking for birthdays...`);
+
     if (!fs.existsSync(MEMBERS_FILE)) {
-      console.error('❌ members.json not found. Create a members.json file in the project root.');
-      process.exit(1);
+      console.error('❌ members.json not found.');
+      return;
     }
 
     const members = JSON.parse(fs.readFileSync(MEMBERS_FILE, 'utf8'));
@@ -138,15 +183,26 @@ async function sendBirthdayEmail(member, attachmentPath) {
       return;
     }
 
+    console.log(`🎂 Found ${birthdays.length} birthday(s) today!`);
+
     for (let i = 0; i < birthdays.length; i += 1) {
       const member = birthdays[i];
       const cardPath = await buildBirthdayCard(member, i);
       await sendBirthdayEmail(member, cardPath);
     }
 
-    console.log('\n🎉 All birthday email(s) sent successfully!');
+    console.log('✅ All birthday emails sent successfully!\n');
   } catch (error) {
-    console.error('❌ Error sending birthday emails:', error.message);
-    process.exit(1);
+    console.error('❌ Error checking birthdays:', error.message);
   }
-})();
+}
+
+// Schedule the job to run every day at 6:00 AM
+schedule.scheduleJob('0 6 * * *', checkAndSendBirthdays);
+
+console.log('🎉 Birthday Email Scheduler started!');
+console.log('📅 Scheduled to check for birthdays daily at 6:00 AM');
+console.log('💚 Press Ctrl+C to stop the scheduler\n');
+
+// Check immediately on startup
+checkAndSendBirthdays();
