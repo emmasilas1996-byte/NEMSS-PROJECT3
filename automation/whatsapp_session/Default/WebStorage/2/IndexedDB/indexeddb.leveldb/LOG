@@ -1,0 +1,4 @@
+2026/02/13-01:20:51.255 7d58 Reusing MANIFEST C:\Users\PFS\NEMSS PROJECT3\automation\whatsapp_session\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2026/02/13-01:20:51.255 7d58 Recovering log #3
+2026/02/13-01:20:51.256 7d58 Reusing old log C:\Users\PFS\NEMSS PROJECT3\automation\whatsapp_session\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000003.log 
+2026/02/13-01:21:18.916 7e4c Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
