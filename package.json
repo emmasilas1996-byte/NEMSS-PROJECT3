@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "send-birthdays": "node sendBirthdays.js",
+    "send-birthday-emails": "node sendBirthdayEmails.js",
     "node members": "node members.js"
   },
   "repository": {
@@ -22,8 +23,9 @@
   "homepage": "https://github.com/emmasilas1996-byte/NEMSS-PROJECT3#readme",
   "dependencies": {
     "canvas": "^3.2.1",
-    "jimp": "^1.6.0",
+    "jimp": "^0.16.1",
     "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.5",
     "puppeteer": "^24.37.2"
   }
 }
