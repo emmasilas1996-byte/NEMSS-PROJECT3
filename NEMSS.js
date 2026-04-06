@@ -554,15 +554,21 @@
                 { member: 'CALEB ISIFE', amount: 5000 },
                 { member: 'CHIEMERIE NWOSU', amount: 2000 },
                 { member: 'AMARA CHUKWUKELEZE', amount: 5000 },
-                { member: 'OMENWA CHIDOZIE', amount: 10000 },
+                { member: 'OMENWA CHIDOZIE', amount: 18000 },
                 { member: 'KINGSLEY ENOJA', amount: 2000 },
                 { member: 'SOPULU NWAWULU', amount: 2000 },
                 { member: 'EBUKA UNAENGBU', amount: 2000 },
+				{ member: 'CHISOM ONUOHA', amount: 2000 },
+				{ member: 'IFEOMA OKEKE', amount: 3000 },
+				{ member: 'CHIMEZIE  OKEKE', amount: 2000 },
+				{ member: 'AMAKA OFORMA', amount: 3000 },
+				{ member: 'CHIDINMMA OGECHUKWU', amount: 2000 },
+				{ member: 'NZUBE OBI', amount: 10000 },
                 ]},
 
             ],
             get2gether: [
-                    { name: "CHIMA BLESSING FATHERS BURIAL 2023", date: "June 2023", contributions: [
+                    { name: "GET2GETHER PARTY 2024/2025", date: "June 2023", contributions: [
                     { member: "ABILITY CHIBUZOR", amount: 1500 },
                     { member: "AMARA EJIKEME", amount: 1000 },
                 ]},
