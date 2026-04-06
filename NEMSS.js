@@ -166,8 +166,10 @@
             2026: [
                 { name: "CHIDOZIE OMENWA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "CHUKWUEBUKA UNEGBU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] }
+                { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
+                { name: "UDOCHUKWU ONWUGBENU", months: [500,500,500,500,500,0,0,0,0,0,0,0] }
             ],
+
             2027: [
               
             ],
@@ -618,11 +620,43 @@
 
             ],
             get2gether: [
-                    { name: "GET2GETHER PARTY 2024/2025", date: "June 2023", contributions: [
+            { name: "GET2GETHER PARTY 2025", date: "JAN 2025", contributions: [
                     { member: "ABILITY CHIBUZOR", amount: 1500 },
                     { member: "AMARA EJIKEME", amount: 1000 },
-                ]},
-            ],
+            ]},
+
+            { name: "MAGAZINE LAUNCHING", date: "JAN 2025", contributions: [
+                { member: 'HAPPINESS OMASIRICHIM', amount: 10000 },
+                { member: 'EBUKA', amount: 10000 },
+                { member: 'CHAIRMAN PAID', amount: 30000 },
+                { member: 'SOPULU NWAWULU', amount: 5000 },
+                { member: 'OFORMA CHIDIEBERE PAID', amount: 2000 },
+                { member: 'AKUBUDE', amount: 10000 },
+                { member: 'AMAKA OFORMA', amount: 3000 },
+                { member: 'KINGSLEY ENOJA', amount: 10000 },
+                { member: 'CHINAZA NJOKU PAID', amount: 10000 },
+                { member: 'OMEREBERE EJIKE', amount: 5000 },
+                { member: 'FLOWER PAID', amount: 5000 },
+                { member: 'GOODNESS ORANEKWU PAID', amount: 1000 },
+                { member: 'ISRAEL CHUKWUKAMMA PAID', amount: 5000 },
+                { member: 'DONSOM', amount: 20000 },
+                { member: 'CALEB', amount: 20000 },
+                { member: 'VICE CHAIRMAN', amount: 5000 },
+                { member: 'KOSI OBI PAID', amount: 5000 },
+            ]},
+            
+            { name: "CAKE LAUNCHING", date: "JAN 2025", contributions: [
+                { member: 'CHIAMAKA UZOCHUKWU', amount: 5000 },
+                { member: 'CHAIRMAN PAID', amount: 20000 },
+                { member: 'CALEB', amount: 10000 },
+                { member: 'AKUBUDE', amount: 10000 },
+                { member: 'EBUKA', amount: 5000 },
+                { member: 'KINGSLEY ENOJA', amount: 5000 },
+                { member: 'DONSOM', amount: 20000 },
+                { member: 'KOSI OBI PAID', amount: 5000 },
+            ]},
+        ],
+
         };
 
         const executivesData = [
