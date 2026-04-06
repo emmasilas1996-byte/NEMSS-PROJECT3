@@ -4,21 +4,21 @@
         
         // Sample Data
         const membersData = [
-                { name: "Pius", base: "Abia State, NG", occupation: "Buisiness", dob: "03-Feb", phone: "", email: "", image: "https://i.ibb.co/yCP1bCR/Pius.jpg" },
-                { name: "Vivian Uche", base: "Lagos State, NG", occupation: "Entrepreneur", dob: "15-Mar", phone: "", email: "", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg" },
-                { name: "Mmesomea Okoye", base: "Anambra State, NG", occupation: "Merchant", dob: "05 Oct", phone: "07031024974", email: "", image: "https://i.ibb.co/kVY5HC5r/Mmesoma-Okoye.jpg" },
-                { name: "Joshua Mgbemena", base: "Imo State, NG", occupation: "Software Developer", dob: "21-Jun", phone: "", email: "", image: "https://i.ibb.co/9m3vXjBh/Joshua-Mgbemena.jpg" },
-                { name: "Emmanuel Onyedika", base: "Anambra State, NG", occupation: "Business Analyst", dob: "14-Aug", phone: "", email: "", image: "https://i.ibb.co/SX4B9hxw/Emmanuel-Onyedika.jpg" },
-                { name: "Chibueze Okafor", base: "Enugu State, NG", occupation: "Digital Marketer", dob: "09-Mar", phone: "", email: "", image: "https://i.ibb.co/v6z5PyCq/Chibueze-Okafor.jpg" },
-                { name: "Adaeze Okeke", base: "Anambra State, NG", occupation: "Customer Relations Officer", dob: "27-May", phone: "", email: "", image: "https://i.ibb.co/B2WGS2tQ/Adaeze-Okeke.jpg" },
-                { name: "Akubude Albert", base: "Delta State, NG", occupation: "Electrical Technician", dob:"11-Jan" ,phone:"",email:"",image:"https://i.ibb.co/tT6m17hQ/Akubude-Albert.jpg"},
-                { name: "Jecinta Ibemesi", base: "Imo State, NG", occupation: "Administrative Assistant", dob: "06-Jul", phone: "", email: "", image: "https://i.ibb.co/VWKf458x/Jecinta-Ibemesi.jpg" },
-                { name: "Chimezie Okeke", base: "Anambra State, NG", occupation: "Project Coordinator", dob: "19-Sep", phone: "", email: "", image: "https://i.ibb.co/B58pPx6m/Chimezie-Okeke.jpg" },
-                { name: "Favour Ogbonna", base: "Rivers State, NG", occupation: "Content Creator", dob: "02-Dec", phone: "", email: "", image: "https://i.ibb.co/TqRnrtL7/Favour-Ogbonna.jpg" },
-                { name: "Ifeoma Okeke", base: "Ebonyi State, NG", occupation: "Human Resources Officer", dob: "25-Apr", phone: "", email: "", image: "https://i.ibb.co/4ZX42JWP/Ifeoma-Okeke.jpg" },
-                { name: "Dabele Okeke", base: "Anambra State, NG", occupation: "Operations Supervisor", dob: "30-Oct", phone: "", email: "", image: "https://i.ibb.co/0Ryhsy8p/Dabele-Okeke.jpg" },
-                { name: "Uzochukwu Augustine", base: "Abuja, NG", occupation: "ICT Support Officer", dob: "08-Jun", phone: "", email: "", image: "https://i.ibb.co/mr9GWSJb/Uzochukwu-Augustine.jpg" },
-                { name: "Ubaka Okoye", base: "Anambra State, NG", occupation: "Logistics Coordinator", dob: "17-Nov", phone: "", email: "", image: "https://i.ibb.co/ZpD4K8Kz/Ubaka-Okoye.jpg" },
+                {name: "Pius", base: "Abia State, NG", occupation: "Buisiness", dob: "03-Feb", phone: "", email: "", image: "https://i.ibb.co/yCP1bCR/Pius.jpg" },
+                {name: "Vivian Uche", base: "Lagos State, NG", occupation: "Entrepreneur", dob: "15-Mar", phone: "", email: "", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg" },
+                {name: "Mmesomea Okoye", base: "Anambra State, NG", occupation: "Merchant", dob: "05 Oct", phone: "07031024974", email: "", image: "https://i.ibb.co/kVY5HC5r/Mmesoma-Okoye.jpg" },
+                {name: "Joshua Mgbemena", base: "Imo State, NG", occupation: "Software Developer", dob: "21-Jun", phone: "", email: "", image: "https://i.ibb.co/9m3vXjBh/Joshua-Mgbemena.jpg" },
+                {name: "Emmanuel Onyedika", base: "Anambra State, NG", occupation: "Business Analyst", dob: "14-Aug", phone: "", email: "", image: "https://i.ibb.co/SX4B9hxw/Emmanuel-Onyedika.jpg" },
+                {name: "Chibueze Okafor", base: "Enugu State, NG", occupation: "Digital Marketer", dob: "09-Mar", phone: "", email: "", image: "https://i.ibb.co/v6z5PyCq/Chibueze-Okafor.jpg" },
+                {name: "Adaeze Okeke", base: "Anambra State, NG", occupation: "Customer Relations Officer", dob: "27-May", phone: "", email: "", image: "https://i.ibb.co/B2WGS2tQ/Adaeze-Okeke.jpg" },
+                {name: "Akubude Albert", base: "Delta State, NG", occupation: "Electrical Technician", dob:"11-Jan" ,phone:"",email:"",image:"https://i.ibb.co/tT6m17hQ/Akubude-Albert.jpg"},
+                {name: "Jecinta Ibemesi", base: "Imo State, NG", occupation: "Administrative Assistant", dob: "06-Jul", phone: "", email: "", image: "https://i.ibb.co/VWKf458x/Jecinta-Ibemesi.jpg" },
+                {name: "Chimezie Okeke", base: "Anambra State, NG", occupation: "Project Coordinator", dob: "19-Sep", phone: "", email: "", image: "https://i.ibb.co/B58pPx6m/Chimezie-Okeke.jpg" },
+                {name: "Favour Ogbonna", base: "Rivers State, NG", occupation: "Content Creator", dob: "02-Dec", phone: "", email: "", image: "https://i.ibb.co/TqRnrtL7/Favour-Ogbonna.jpg" },
+                {name: "Ifeoma Okeke", base: "Ebonyi State, NG", occupation: "Human Resources Officer", dob: "25-Apr", phone: "", email: "", image: "https://i.ibb.co/4ZX42JWP/Ifeoma-Okeke.jpg" },
+                {name: "Dabele Okeke", base: "Anambra State, NG", occupation: "Operations Supervisor", dob: "30-Oct", phone: "", email: "", image: "https://i.ibb.co/0Ryhsy8p/Dabele-Okeke.jpg" },
+                {name: "Uzochukwu Augustine", base: "Abuja, NG", occupation: "ICT Support Officer", dob: "08-Jun", phone: "", email: "", image: "https://i.ibb.co/mr9GWSJb/Uzochukwu-Augustine.jpg" },
+                {name: "Ubaka Okoye", base: "Anambra State, NG", occupation: "Logistics Coordinator", dob: "17-Nov", phone: "", email: "", image: "https://i.ibb.co/ZpD4K8Kz/Ubaka-Okoye.jpg" },
                 {name: "Henry Adibe", base: "Anambra State. NG", occupation: "Deals on Motor Parts", dob: "24-Dec", phone: "0813496324", email: "", image: "https://i.ibb.co/S7PKS2Tn/Henry-Adibe.jpg"},
                 {name: "Faith Anthony", base: "Lagos State. NG", occupation: "Fashion Designer", dob: "12-May", phone: "", email: "", image: "https://i.ibb.co/BVcN4yQH/Faith-Anthony.jpg"},
                 {name: "Precious Madu", base: "Rivers State. NG", occupation: "Business", dob: "23 Dec", phone: "", email: "", image: "https://i.ibb.co/B5TGdrKc/Precious-Madu.jpg"},
@@ -66,6 +66,7 @@
 
         ];
 
+//Monthly Duies Segment
         const duesData = {
             2023: [
                 { name: "ABILITY CHIBUZOR", months: [0, 0, 0, 0, 0, 0, 500, 500, 500, 500, 500, 500] },
@@ -167,7 +168,8 @@
                 { name: "CHIDOZIE OMENWA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "CHUKWUEBUKA UNEGBU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
                 { name: "UDEJI CHINEDU", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
-                { name: "UDOCHUKWU ONWUGBENU", months: [500,500,500,500,500,0,0,0,0,0,0,0] }
+                { name: "UDOCHUKWU ONWUGBENU", months: [500,500,500,500,500,0,0,0,0,0,0,0] },
+                { name: "UBAJEKWE IFENNA", months: [500,500,500,500,500,500,500,500,500,500,500,500] },
             ],
 
             2027: [
@@ -184,7 +186,7 @@
             ],
         };
 
-        //Contribution entries
+ //Contribution entries
         const contributionsData = {
             burial: [
                 { name: "Emmanuel Silas Fathers Burial 2023", date: "May 2023", contributions: [
@@ -358,41 +360,40 @@
             ]},
 
             { name: "CHINAZA KAKA MOTHERS BURIAL 2025", date: "SEPT 2025", contributions: [
-		        { member: 'ABILITY CHIBUZOR', amount: 1500 },
                 { member: 'ADAEZE OKEKE', amount: 2000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 1500 },
                 { member: 'ALIBA EZENWA', amount: 1500 },
-                { member: 'AMARA GLORIA', amount: 1500 },
+                { member: 'AMACHUKWU CHIDINMA', amount: 1500 },
+                { member: 'AMAKA OFORMA', amount: 1500 },
                 { member: 'AMARA JULIET', amount: 1500 },
-                { member: 'AMARA UZOMA', amount: 1500 },
-                { member: 'AWA CHIAMAKA', amount: 1500 },
-                { member: 'CHHIOMA OKEMEFUNA', amount: 1500 },
-                { member: 'CHIAGOZIE AKUBUE', amount: 2000 },
-                { member: 'CHIAMAKA UZOKWE', amount: 1500 },
-                { member: 'CHIDI OFORMA', amount: 1500 },
-                { member: 'CHIMA BLESSSING', amount: 1500 },
-                { member: 'CHIMEZIE OKEKE', amount: 1500 },
-                { member: 'CHISOM OFORMA', amount: 3000 },
-                { member: 'CHISOM ONUORAH', amount: 2000 },
-                { member: 'CHUKWUDEBELU JACINTA', amount: 1500 },
-                { member: 'CHUKWULEZE AMARA HOPE', amount: 2000 },
-                { member: 'EBUKE UNEGBU', amount: 2000 },
+                { member: 'CHIAMAKA AWA', amount: 1500 },
+                { member: 'CHIMA BLESSING', amount: 1500 },
+                { member: 'CALEB ISIFE', amount: 2000 },
+                { member: 'CHIEMERIE OKOYE', amount: 2000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 3000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 1500 },
+                { member: 'CHISOM ONUOHA', amount: 1500 },
+                { member: 'ABILITY CHIBUZOR', amount: 2000 },
+                { member: 'EBUKA UNEGBU', amount: 2000 },
+                { member: 'GOODNESS ONYELEONU', amount: 1500 },
+                { member: 'GOODNESS ORANEKWU', amount: 1500 },
                 { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
-                { member: 'HENRY ADIBE', amount: 2000 },
+                { member: 'HENRY ADIBE', amount: 3000 },
                 { member: 'IJEOMA NWOKOLO', amount: 1500 },
-                { member: 'ISIFE CALEB', amount: 2000 },
+                { member: 'IKENNA EZE', amount: 1500 },
                 { member: 'KINGSLEY ENOJA', amount: 1500 },
-                { member: 'MABU NELLY', amount: 30000 },
-                { member: 'NNADI CHIDIMMA', amount: 1500 },
-                { member: 'OKEN JEREMAIAH', amount: 1500 },
-                { member: 'OKORO CHUKWUBE', amount: 1500 },
-                { member: 'OKOYE CHIEMERIE', amount: 1500 },
-                { member: 'OMENWA CHIDOZIE', amount: 2500 },
-                { member: 'ONWUGBENU UDOCHUKWU', amount: 1500 },
-                { member: 'SOMTO OKEKE', amount: 1500 },
+                { member: 'NZUBE OBI', amount: 1900 },
+                { member: 'KOSI OBI', amount: 2000 },
+                { member: 'NZUBE OKENWA', amount: 1500 },
+                { member: 'CHEKWUBE OKORO', amount: 1500 },
+                { member: 'OMENWA CHIDOZIE', amount: 1500 },
+                { member: 'ONYINYE NNADI', amount: 1500 },
+                { member: 'EMMANUEL SILAS', amount: 1500 },
+                { member: 'SOMTO OKEKE', amount: 2000 },
                 { member: 'SOPULU NWAWULU', amount: 1500 },
-                { member: 'SUZY OMEREBERE', amount: 1500 },
-                { member: 'UBAJEKWE IFENNA', amount: 2000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
+                { member: 'SUZY EJIKE', amount: 1500 },
+                { member: 'IFENNA UBAJEKWE', amount: 2000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 1500 },
             ]},
 
             { name: "AMARA GLORIA HUSBAND  2025", date: "SEPT 2025", contributions: [
@@ -434,6 +435,7 @@
                 { member: 'ADAEZE OKEKE', amount: 2000 },
                 { member: 'CHISOM OFORMA', amount: 2000 },
             ]},
+
             { name: "CALEB MOTHER'S BURIAL 2025", date: "MARCH 2026", contributions: [
                 { member: 'HAPPINESS UDECHUKWU', amount: 3000 },
                 { member: 'CHINAEME FAVOUR', amount: 2000 },
@@ -478,6 +480,7 @@
                 { member: 'NZUBE OBI', amount: 5000 },     
             ]},
 
+//wedding List 
             ],
             wedding: [
                 { name: "CHIAMAKA UZOKWES WEDDING", date: "June 2024", contributions: [
@@ -520,6 +523,7 @@
                 { member: 'CHISOM OFORMA', amount: 2000 },
             ]},
               
+//Child Dedication List
             ],
             childDedication: [
                 { name: "Chima Blessing Child Dedictaion 2023", date: "June 2022", contributions: [
@@ -548,33 +552,30 @@
                 { member: 'UZOKWE CHIAMAKA', amount: 1000 },
                 ]}
             ],
+
+//Support For the Memebers
             support: [
-                { name: "BUSINESS SUPPORT FOR OMERBERE 2025", date: "June 2025", contributions: [
-                { member: 'ABILITY CHIBUZOR', amount: 1500 },
-                { member: 'AMARA EJIKEME', amount: 1000 },
-                { member: 'CHIAMAKA AWA', amount: 1500 },
-                { member: 'CHIDI OFORMA', amount: 1000 },
-                { member: 'CHISOM ONUORAH', amount: 1000 },
-                { member: 'EKPEREKA OKEKE', amount: 1000 },
-                { member: 'GOODNESS ONYERUONU', amount: 1000 },
-                { member: 'IJEOMA NWOKOLO', amount: 1000 },
-                { member: 'ISIFE CALEB', amount: 5000 },
-                { member: 'IWUANYA EMMANUEL', amount: 1000 },
-                { member: 'KINGSLEY ENOJA', amount: 1000 },
-                { member: 'NNADI CHIDINMMA', amount: 1000 },
-                { member: 'OBI KOSI', amount: 1500 },
-                { member: 'OGBONNA FAVOUR', amount: 1000 },
-                { member: 'OMENWA CHIDOZIE', amount: 2000 },
-                { member: 'ONWUGBENU UDOCHUKWU', amount: 1000 },
-                { member: 'SILAS EMMANUEL', amount: 2000 },
-                { member: 'SOMTO OKEKE', amount: 1000 },
-                { member: 'SOPULU NWAWULU', amount: 1000 },
-                { member: 'UBAJEKWE IFENNA', amount: 2000 },
-                { member: 'UDECHUKWU HAPPINESS', amount: 1000 },
-                { member: 'UDEJI CHINEDU', amount: 5000 },
-                { member: 'UZOKWE CHIAMAKA', amount: 1000 },
-                ]},
-               { name: "SUPPORT FOR MR OGUNJIOFFOR 2026", date: "June 2025", contributions: [
+            { name: "BUSINESS SUPPORT FOR OMERBERE 2025", date: "June 2025", contributions: [
+                { member: 'CHINEDU UDEJIMBA', amount: 10000 },
+                { member: 'KINGSLEY ENOJA', amount: 10000 },
+                { member: 'IKENNA EZE', amount: 5000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 4000 },
+                { member: 'EMMANUEL SILAS', amount: 5000 },
+                { member: 'ABILITY CHIBUZOR', amount: 5000 },
+                { member: 'KOSI OBI', amount: 5000 },
+                { member: 'OMENWA CHIDOZIE', amount: 10000 },
+                { member: 'DONSOM ONUOHA', amount: 5000 },
+                { member: 'AMARA EJIKEME', amount: 5000 },
+                { member: 'CHIEMERIE OKOYE', amount: 5000 },
+                { member: 'CHIMEZIE OKEKE', amount: 5000 },
+                { member: 'ALIBA EZENWA', amount: 5000 },
+                { member: 'SOMTO OKEKE', amount: 5000 },
+                { member: 'CALEB ISIFE', amount: 5000 },
+                { member: 'ADAEZE OKEKE', amount: 5000 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 5000 },
+            ]},
+
+            { name: "SUPPORT FOR MR OGUNJIOFFOR 2026", date: "June 2025", contributions: [
                 { member: 'HAPPINESS UDECHUKWU', amount: 2000 },
                 { member: 'SOMTO OKEKE', amount: 2000 },
                 { member: 'UDOCHUKWU GODSLOVE', amount: 2500 },
@@ -616,13 +617,48 @@
 				{ member: 'AMAKA OFORMA', amount: 3000 },
 				{ member: 'CHIDINMMA OGECHUKWU', amount: 2000 },
 				{ member: 'NZUBE OBI', amount: 10000 },
-                ]},
+            ]},
 
+//Get Together List
             ],
             get2gether: [
             { name: "GET2GETHER PARTY 2025", date: "JAN 2025", contributions: [
-                    { member: "ABILITY CHIBUZOR", amount: 1500 },
-                    { member: "AMARA EJIKEME", amount: 1000 },
+                { member: 'ABILITY CHIBUZOR', amount: 45000 },
+                { member: 'AMAKA OFORMA', amount: 15000 },
+                { member: 'AMARA JULIET', amount: 5000 },
+                { member: 'CHIEMERIE ATUCHUKWU', amount: 16000 },
+                { member: 'CALEB ISIFE', amount: 70000 },
+                { member: 'CHIAMAKA AWA', amount: 15000 },
+                { member: 'CHIEMERIE OKOYE', amount: 25000 },
+                { member: 'CHIGOZIE AKUBUDE', amount: 15000 },
+                { member: 'CHIMA BLESSING', amount: 15000 },
+                { member: 'CHIMEZIE OKEKE', amount: 10000 },
+                { member: 'CHISOM ONUOHA', amount: 15000 },
+                { member: 'AMARA HOPE', amount: 15000 },
+                { member: 'ISRAEL CHUKWUKAMMA', amount: 5000 },
+                { member: 'SUZY EJIKE', amount: 10000 },
+                { member: 'GOODNESS ORANEKWU', amount: 15000 },
+                { member: 'HAPPINESS UDECHUKWU', amount: 65000 },
+                { member: 'HENRY ADIBE', amount: 50000 },
+                { member: 'IJEOMA NWOKOLO', amount: 15000 },
+                { member: 'IFENNA UBAJEKWE', amount: 50000 },
+                { member: 'KINGSLEY ENOJA', amount: 15000 },
+                { member: 'KOSI OBI', amount: 15000 },
+                { member: 'MAKUO OJUKWU', amount: 30000 },
+                { member: 'CHINAZA NJOKU', amount: 15000 },
+                { member: 'NZUBE OBI', amount: 50000 },
+                { member: 'OFORMA CHIDIEBERE', amount: 15000 },
+                { member: 'CHIOMA OKEMEFUNA', amount: 15000 },
+                { member: 'JEREMIAH OKENWA', amount: 15000 },
+                { member: 'CHINECHEREM OKEZUE', amount: 5000 },
+                { member: 'OMENWA CHIDOZIE', amount: 185000 },
+                { member: 'ONYINYE MBONU', amount: 50000 },
+                { member: 'EMMANUEL SILAS', amount: 15000 },
+                { member: 'SOMTO OKEKE', amount: 100000 },
+                { member: 'SOPULU NWAWULU', amount: 15000 },
+                { member: 'CHINEDU UDEJIMBA', amount: 90000 },
+                { member: 'UDECHUKWU ONWUGBENU', amount: 15000 },
+                { member: 'CHIAMAKA UZOCHUKWU', amount: 15000 },
             ]},
 
             { name: "MAGAZINE LAUNCHING", date: "JAN 2025", contributions: [
@@ -659,6 +695,7 @@
 
         };
 
+//Executies image Page
         const executivesData = [
             { name: 'Chinedu Udejimba', position: 'Chairman', image: 'https://i.ibb.co/hFv6b95Y/Chinedu-Udeji.jpg', },
             { name: 'Chibuzor Ability', position: 'Vice Chairman', image: 'https://i.ibb.co/LzmXrVTg/Ability-Chibuzor.jpg' },
@@ -673,6 +710,7 @@
             { name: 'Caleb Isife', position: 'Vice Planning-Committe', image: 'https://i.ibb.co/84Qf3mF7/Caleb-Isife.jpg' }
         ];
 
+//Memebers image Page
         const galleryData = [
             { name: "Pius", image: "https://i.ibb.co/KpWckHrC/Pius.jpg", thought: "Consistency quietly builds the future you desire." },
             { name: "Vivian Uche", image: "https://i.ibb.co/FbwqmxwS/Vivian-Uche.jpg", thought: "The success of tomorrow." },
