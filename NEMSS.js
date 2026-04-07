@@ -673,7 +673,6 @@
                 { member: 'VICE CHAIRMAN', amount: 5000 },
                 { member: 'KOSI OBI PAID', amount: 5000 },
             ]},
-            
             { name: "CAKE LAUNCHING", date: "JAN 2025", contributions: [
                 { member: 'CHIAMAKA UZOCHUKWU', amount: 5000 },
                 { member: 'CHAIRMAN PAID', amount: 20000 },
