@@ -1113,3 +1113,5 @@
  document.addEventListener("DOMContentLoaded", () => {
   console.log("NEMSS app loaded");
 });
+const PORT = process.env.PORT || 3000;  // Use environment port if available
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
