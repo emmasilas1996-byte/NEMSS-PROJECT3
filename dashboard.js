@@ -351,7 +351,7 @@ app.get('/api/contributions-detailed', (req, res) => {
 
 // Main dashboard route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Group overview route
