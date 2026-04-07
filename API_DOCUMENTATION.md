@@ -11,6 +11,7 @@ The dashboard API has been successfully updated to work with the new `contributi
 2. Convert contribution data to the flat array format needed by statistics calculations
 3. Added new API endpoints for dues data and detailed contributions
 
+
 ## Available API Endpoints
 
 ### 1. **Member Statistics**

@@ -14,6 +14,7 @@ $env:SENDER_NAME = 'NEMSS Family'
 
 Write-Host "Environment variables configured." -ForegroundColor Yellow
 
+
 # Change to the project directory
 Set-Location $PSScriptRoot
 

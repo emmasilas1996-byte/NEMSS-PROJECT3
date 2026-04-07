@@ -19,6 +19,7 @@ function getMembersData() {
   }
 }
 
+
 // Load contribution data
 function getContributionData() {
   try {

@@ -37,6 +37,7 @@ if %errorlevel% equ 0 (
     node autoBirthdayScheduler.js
 )
 
+
 echo.
 echo Deployment complete!
 pause

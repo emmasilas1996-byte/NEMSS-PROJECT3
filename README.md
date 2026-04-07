@@ -12,6 +12,7 @@ Automated birthday email system with personalized cards and a comprehensive data
 - 📅 **Date Matching**: Automatically matches birthdays with current date
 - 🔄 **Persistent Operation**: Runs continuously in background with PM2
 
+
 ### Data Dashboard
 - 📊 **Member Analytics**: Statistics on member distribution, occupations, and contact info
 - 💰 **Contribution Tracking**: Monitor financial contributions with detailed breakdowns
