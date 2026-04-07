@@ -480,7 +480,7 @@
                 { member: 'NZUBE OBI', amount: 5000 },     
             ]},
 
-//wedding List 
+//wedding List
             ],
             wedding: [
                 { name: "CHIAMAKA UZOKWES WEDDING", date: "June 2024", contributions: [
