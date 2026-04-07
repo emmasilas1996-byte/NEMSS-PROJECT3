@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEMSS 2014 - Group Overview</title>
+    <style>
+        :root {
+            --bg-primary: radial-gradient(circle at top, #5b21b6 0%, #312e81 40%, #0f172a 100%);
+            --bg-card: rgba(15, 23, 42, 0.9);
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-accent: #60a5fa;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --border-color: rgba(96, 165, 250, 0.18);
+            --shadow: rgba(0, 0, 0, 0.35);
+            --hover-shadow: rgba(96, 165, 250, 0.18);
+        }
+
+        body.dark-theme {
+            --bg-primary: radial-gradient(circle at top, #1d1b53 0%, #0f172a 45%, #020617 100%);
+            --bg-card: rgba(15, 23, 42, 0.95);
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-accent: #38bdf8;
+            --border-color: rgba(96, 165, 250, 0.22);
+            --shadow: rgba(0, 0, 0, 0.55);
+            --hover-shadow: rgba(56, 189, 248, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--text-primary);
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: var(--text-primary);
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .header .nav-buttons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-back, .btn-home {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 14px;
+            border: 1px solid rgba(96, 165, 250, 0.35);
+            background: rgba(15, 23, 42, 0.75);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            backdrop-filter: blur(12px);
+        }
+
+        .btn-back:hover, .btn-home:hover {
+            background: rgba(96, 165, 250, 0.12);
+            border-color: rgba(96, 165, 250, 0.55);
+            transform: translateY(-2px);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 12px;
+            text-shadow: 0 20px 60px rgba(44, 78, 188, 0.18);
+            font-weight: 900;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            margin-bottom: 40px;
+        }
+
+        .module-card {
+            background: var(--bg-card);
+            border-radius: 28px;
+            padding: 36px 28px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22);
+            border: 1px solid var(--border-color);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .module-card:hover::before {
+            left: 100%;
+        }
+
+        .module-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 35px 90px rgba(15, 23, 42, 0.4);
+            border-color: rgba(96, 165, 250, 0.35);
+        }
+
+        .module-icon {
+            font-size: 4.4rem;
+            margin-bottom: 18px;
+            display: inline-block;
+        }
+
+        .module-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+
+        .module-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 26px;
+            line-height: 1.8;
+        }
+
+        .module-stats {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stat-badge {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .stat-value {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #a5b4fc;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            color: white;
+            padding: 14px 42px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(56, 189, 248, 0.24);
+        }
+
+        .main-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .main-cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 18px 45px rgba(56, 189, 248, 0.22);
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .main-cta a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 22px 55px rgba(56, 189, 248, 0.32);
+            background: linear-gradient(135deg, #60a5fa, #7c3aed);
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-secondary);
+            opacity: 0.9;
+            margin-top: 60px;
+            font-size: 1rem;
+        }
+
+        .loading {
+            text-align: center;
+            color: var(--text-primary);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--text-primary);
+            padding: 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(96, 165, 250, 0.25);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.03) rotate(10deg);
+            box-shadow: 0 10px 28px rgba(56, 189, 248, 0.2);
+        }
+
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .theme-toggle .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            .header h1 {
+                font-size: 2.4rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .header .nav-buttons {
+                position: static;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .btn-back, .btn-home {
+                padding: 10px 14px;
+                font-size: 0.95rem;
+            }
+
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .module-card {
+                padding: 28px 22px;
+            }
+
+            .module-icon {
+                font-size: 3.4rem;
+            }
+
+            .module-title {
+                font-size: 1.6rem;
+            }
+
+            .theme-toggle {
+                top: 18px;
+                right: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg id="sun-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg id="moon-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+
+        <div class="header">
+            <div class="nav-buttons">
+                <button onclick="history.back()" class="btn-back">
+                    <span>←</span>
+                    <span>Back</span>
+                </button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/'" class="btn-home">
+                    <span>🏠</span>
+                    <span>Home</span>
+                </button>
+            </div>
+            <h1>🎯 NEMSS 2014 Group Overview</h1>
+            <p>Welcome to the NEMSS 2014 Alumni Community Hub</p>
+        </div>
+
+        <div class="modules-grid" id="modulesGrid">
+            <div class="loading">📊 Loading modules...</div>
+        </div>
+
+        <div class="main-cta">
+            <a href="/overview#dashboard" onclick="navigateToDashboard(); return false;">
+                📊 Go to NEMSS 2014 Dashboard
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>NEMSS 2014 Alumni Association • Managing Members, Contributions & Events</p>
+        </div>
+    </div>
+
+    <script>
+        // Dark Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+
+            // Save theme preference
+            if (document.body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        async function loadModuleData() {
+            try {
+                const [memberStats, contribStats] = await Promise.all([
+                    fetch('/api/member-stats').then(r => r.json()),
+                    fetch('/api/contribution-stats').then(r => r.json())
+                ]);
+
+                renderModules(memberStats, contribStats);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('modulesGrid').innerHTML = 
+                    '<div class="loading" style="grid-column: 1/-1;">❌ Error loading modules</div>';
+            }
+        }
+
+        function renderModules(memberStats, contribStats) {
+            const modulesGrid = document.getElementById('modulesGrid');
+
+            const modules = [
+                {
+                    icon: '👥',
+                    title: 'Members Directory',
+                    description: 'Manage and view all NEMSS 2014 members',
+                    stats: [
+                        `<span class="stat-value">${memberStats.totalMembers}</span> Total Members`,
+                        `<span class="stat-value">${memberStats.emailStats.withEmail}</span> With Emails`
+                    ]
+                },
+                {
+                    icon: '💰',
+                    title: 'Contributions',
+                    description: 'Track all community contributions and donations',
+                    stats: [
+                        `<span class="stat-value">${contribStats.totalContributions}</span> Event Contributions`,
+                        `₦<span class="stat-value">${(contribStats.totalAmount - (contribStats.totalDues || 0)).toLocaleString()}</span> from Events`,
+                        `₦<span class="stat-value">${(contribStats.totalDues || 0).toLocaleString()}</span> from Dues`,
+                        `₦<span class="stat-value">${contribStats.totalAmount.toLocaleString()}</span> Grand Total`
+                    ]
+                },
+                {
+                    icon: '📊',
+                    title: 'Analytics Dashboard',
+                    description: 'Comprehensive data visualizations and insights',
+                    stats: [
+                        `<span class="stat-value">${Object.keys(memberStats.membersByState).length}</span> States`,
+                        `<span class="stat-value">${Object.keys(memberStats.occupationCategories).length}</span> Sectors`
+                    ]
+                }
+            ];
+
+            modulesGrid.innerHTML = modules.map((module, index) => `
+                <div class="module-card" onclick="navigateToDashboard()">
+                    <div class="module-icon">${module.icon}</div>
+                    <div class="module-title">${module.title}</div>
+                    <div class="module-description">${module.description}</div>
+                    <div class="module-stats">
+                        ${module.stats.map(stat => `<div class="stat-badge">${stat}</div>`).join('')}
+                    </div>
+                    <button class="cta-button">View More →</button>
+                </div>
+            `).join('');
+        }
+
+        function navigateToDashboard() {
+            window.location.href = '/';
+        }
+
+        // Load data on page load
+        window.addEventListener('load', loadModuleData);
+    </script>
+</body>
+</html>
