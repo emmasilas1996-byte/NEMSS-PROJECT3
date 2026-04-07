@@ -11,6 +11,7 @@ if (!fs.existsSync(OUT_DIR)) {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 }
 
+
 function parseDOB(dob) {
   const parts = dob.replace(/-/g, ' ').split(' ').filter(Boolean);
   const day = parts[0].padStart(2, '0');

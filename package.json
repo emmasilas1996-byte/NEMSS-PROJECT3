@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NEMSS 2014 Birthday Email Automation & Data Dashboard",
   "main": "dashboard.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "send-birthdays": "node sendBirthdays.js",

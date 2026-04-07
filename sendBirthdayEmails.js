@@ -17,6 +17,7 @@ function parseDOB(dob) {
   return { day, month };
 }
 
+
 function todayKey() {
   const d = new Date();
   const day = String(d.getDate()).padStart(2, '0');

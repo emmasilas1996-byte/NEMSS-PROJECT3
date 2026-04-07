@@ -13,6 +13,7 @@ All frontend pages are now properly integrated with the backend APIs for data vi
 - `GET /api/member-stats` - Fetches member statistics
 - `GET /api/contribution-stats` - Fetches contribution statistics
 
+
 **Features:**
 - ✅ Tab-based navigation (Members & Contributions)
 - ✅ Real-time data loading with error handling
